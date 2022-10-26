@@ -90,4 +90,4 @@ etc
 ## Group Details:
 
 We are team of four people. 
-Shahla and Samantha are in charge os gathering information about the results of the dataset and what we want to achieve. Ryiochi was in charge of cleaning up the csv and dataset. Matthew was initializing our databases.
+Shahla and Samantha are in charge of gathering information about the results of the dataset and what we want to achieve. Ryiochi was in charge of cleaning up the csv and dataset. Matthew was initializing our databases.
