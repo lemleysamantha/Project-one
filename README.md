@@ -2,9 +2,11 @@
 # Topic Selected:  Used Cars Price Prediction
 
 ## Background:
-Over the past few years Automotive Industry has faced a shortage in Semiconductor Integrate Chips globally. The Semicoductor IC is a critical component for controlling several electronic devices in the car. 
-Even though the car industry is ever growing but this shortage is impeding the growth of new car production and sales. Therefore, there is a trend of increasing demand of used cars which is making the prices of used cars higher.
-Based on the current situation in the automotive industry, we have decided on predicting the prices of used cars for our project. Though it is a global issue but we will limit our studies and findings for US market only.
+
+Over the past few years, the automotive industry has faced a shortage in the Semiconductor Integrate Chips globally. The Semicoductor IC is a critical component for controlling several electronic devices in the vehicle. 
+Even though the car industry is growing at a fast rate, the shortage is impeding the growth of new car production and sales. The new car sales industry is making up for the hsortage by raising their APR and prices. Therefore, there is a trend of increasing demand of used cars which is making the prices of used cars higher as well.
+Based on the current situation in the automotive industry, we have decided on predicting the prices of used cars for our project. Though it is a global issue, we will limit our studies and findings for US market only.
+
 
 ## Data Sources:
 https://www.kaggle.com/code/maciejautuch/car-price-prediction/data
@@ -26,7 +28,8 @@ import seaborn as sns
 
 import pandas_profiling as pp
 
-### Liblaries for preprocessing
+### Libraries for preprocessing
+
 
 from sklearn import preprocessing
 
@@ -46,15 +49,16 @@ from sklearn.tree import DecisionTreeRegressor
 
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, ExtraTreesRegressor, BaggingRegressor
 
-### Liblaries for cross validation and model evaluation
+### Libraries for cross validation and model evaluation
+
 
 from sklearn.model_selection import train_test_split, cross_val_score
 
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
 
+-------Here is the list of libraries we will be needing (may change):
 
--------Here is the list of libraries we will be needing it may change also:
 *	Panda
 *	Sql
 *	Matplotlib
@@ -65,10 +69,12 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 *	Etc---------------
 
 ## Questions to Answer:
-1.	How does the mileage run will affect the price of the used car?
-2.	How do size of the car impact the price?
-3.	Age of the car, condition and fuel type affect the price of the car?
-4.	
+
+1.	How does the mileage affect the price of the used car?
+2.	How does size of the car impact the price?
+3.	How does the age of the car, condition and fuel type affect the price of the car?
+4.	Will this affect the overall demand for a used car in place of a new car for consumers?
+
 ## Steps to be taken:
 Data Cleaning:
  that includes getting rid of all undesired columns
@@ -90,4 +96,6 @@ etc
 ## Group Details:
 
 We are team of four people. 
-(we can put our name here with the assign duties )
+
+Shahla and Samantha are in charge of gathering information about the results of the dataset and what we want to achieve. Ryiochi was in charge of cleaning up the csv and dataset. Matthew was initializing our databases.
+
