@@ -1,0 +1,26 @@
+1. Exploration phase
+
+	- The original dataset contains 426,880 rows with 26 columns.
+	- Based on relevance of each column to our analysis and the number of available, i.e., not NaN, values in the column, decided to focus on the fullowing columns:
+		Price, year, manufacturer, model, condition, cylinders, fuel, odometer, title status, transmission, drive, and type
+	- Also, 'id' column will be kept for identification.
+	- Any rows that include NaN data have been removed from the dataset, which then contains 127,232 rows with 13 columns.
+		i)	Id, price, year, and odometer are numerical.
+		ii)	Manufacturer, model, condition, cylinders, fuel, title status, transmission, drive, and type are object.
+	- Id and year could be converted into object and date, respectively.
+	- In addition, cylinders will be processed and used as number for further analysis.
+
+	- Exploration of each column
+		a. Id			Converted into object and used as data identification
+		b. Price		Maximum value is 3.7e+09. There will be outliers to be removed.
+		c. Year		Some old years will be eliminated.
+		d. Manufacturer	40 manufacturer. Top five includes ford, chevrolet, toyota, hond, and nissan
+		e. Model		12,096 models. Preprocessing will be needed.
+		f. Condition	Major conditions are excellent, good, and like new. Similar conditions could be combined. 
+		g. Cylinders	Major cylinders are 6, 4, 8 cylinders.
+		h. Fuel		Over 90% of values are gas.
+		i. Odometer		Maximum value is 1.0e+07. There will be outliers to be removed.
+		j. Title status	Over 95% of values are clean.
+		k. Transmission	Over 80% of values are automatic.
+		l. Drive		Values include 4wd, fwd, and rwd. Each of three accounts for over 20%.	
+		m. Type		There are 13 types, which could be preprocessed.
