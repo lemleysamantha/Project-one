@@ -117,11 +117,18 @@ Shahla and Samantha are in charge of gathering information about the results of 
 * Fitting Data to a Model
 * Evaluate the Model 
 
-### Data Collection
+## Data Collection
 We planned to work with pandas in jupyter notebook. For that we imported Panda Dependencies to create data frame. Data frames are more structured and tabular form and its more easier to process and analyze the data that way.
 
-### Preprocessing/ Cleaning Data
+## Preprocessing/ Cleaning Data
 We can not feed the raw data in the Machine learning model for that we worked on cleaning the data. 
+
+### Dropped Unwanted Columns
+![image](https://user-images.githubusercontent.com/105535250/199826222-7a26b31b-4c6f-410b-9473-4ca8bb55ca83.png)
+In the image above you can see the name of columns we dropped out of total 26 columns. We made this decision because the information from these columns were not required to predict price for the Used Cars. 
+
+### Dropped Null Values
+Pandas DataFrame dropna() function is used to remove rows and columns with Null/NaN values which is basically missing data and it can cause error in Machine learning Model.
 
 
 
