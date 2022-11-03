@@ -153,6 +153,12 @@ We selected to work on:
 * Linear Regression Model
 * Lasso Model
 
-## Split the data into Training and Testing
-Using the features of the dataset, we feed the data in the Machine Learning Model. split the processed data into training and testing
+## Split the data and target
+We then fed the data in the Machine Learning Model and using the features of the dataset, we  split the processed data into training and testing data. We trained our machine learning algorithm with training data then we tested or evaluated our machine learning model with the test data.
+first we created two variable **X** and **Y** to split data and the target. We stored **Price** in **Y** which is our target variable and pass rest of the features in varaible **X**. 
 
+## Split Training and Test data
+for this we created four variables:
+
+**X_train, X_test, Y_train, and y_test**
+As we seperated the target from the data above, we then put all the data to train the module in the **X_train** variable and all the testing data in the variable **X_test**.
