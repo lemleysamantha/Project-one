@@ -113,7 +113,8 @@ Shahla and Samantha are in charge of gathering information about the results of 
 
 * Data Collection
 * Preprocessing/ Cleaning data
-* Training and Testing Data Split
+* Machine Learning Model Selection
+* Split the data into Training and Testing 
 * Fitting Data to a Model
 * Evaluate the Model 
 
@@ -146,9 +147,12 @@ After visual interpretation, we realized that the lower 5% of the data has very 
 * ### One hot encoding
 One hot encoding can be defined as the essential process of converting the categorical data variables to be provided to machine and deep learning algorithms which in turn improve predictions as well as classification accuracy of a model. We utized one hot encoding for converting our categorical features which are present in many of our columns like **fuel, manufacturer, model, condition, transmission, drive , etc**.
 
-# Machine Learning Models
-We selected to work:
+## Machine Learning Models Selection
+We selected to work on:
 * Decision Tree Regressor
 * Linear Regression Model
 * Lasso Model
+
+## Split the data into Training and Testing
+Using the features of the dataset, we feed the data in the Machine Learning Model. split the processed data into training and testing
 
