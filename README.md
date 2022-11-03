@@ -133,7 +133,7 @@ Pandas DataFrame dropna() function is used to remove rows and columns with Null/
 * ### Format the Cylinder and Year column 
 For **cylinders** we changed the data type to float64 and remover the object cylinder to make it Numeric value also there were **257** cylinders categorized as **Others** we replace the value to **0**. For the **Year** column it was in decimal so we just changed the data type to integer to remove the decimal from this column. 
 
-*### Recategorize the State column
+* ### Recategorize the State column
 To reduce the number of unique values in the state column we recategorized the state and arranged them into four region named as **west, midwest, northeast, and south**.
 
 
