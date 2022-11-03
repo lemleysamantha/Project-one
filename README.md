@@ -12,7 +12,11 @@ Based on the current situation in the automotive industry, we have decided on pr
 https://www.kaggle.com/code/maciejautuch/car-price-prediction/data
 This dataset collected in Kaggle is mainly from craiglist.org (used item selling website) from all over US. These cars are from different manufacturers and of different years.
 
-This Data has 26 columns list as:
+This Data has 26 columns and 426880 rows.
+
+![image](https://user-images.githubusercontent.com/105535250/199819404-a0f16653-e9dd-437e-97a8-251c9d1c3d5b.png)
+
+
 --------(we can add data image here)-------------------
 
 ## Required Libraries:
