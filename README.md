@@ -141,4 +141,4 @@ We plotted some visuals to find price outliers for that we compared different fe
 --------------image will be added later-------------
 
 ### Removing Outliers
-After visual interpretation, we realized that 
+After visual interpretation, we realized that the lower 5% of the data has very low number of values and the upper 5% of the data was mainly very distinctive values. Therefore we decide to drop that portion of the data and set out Price range from 5th to 95th percentile. 
