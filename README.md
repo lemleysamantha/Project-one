@@ -20,11 +20,13 @@ Our plan is to make Price as our target variable and rest ww will pass as featur
 
 ## Required Libraries:
 
-List of all necessary liblaries
+### Libraries for data processing 
 
 import numpy as np
 
 import pandas as pd
+
+### Libraries for visualization
 
 import matplotlib.pyplot as plt
 
@@ -35,7 +37,6 @@ import seaborn as sns
 import pandas_profiling as pp
 
 ### Libraries for preprocessing
-
 
 from sklearn import preprocessing
 
@@ -62,17 +63,18 @@ from sklearn.model_selection import train_test_split, cross_val_score
 
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
+### Libraries for SQL
 
--------Here is the list of libraries we will be needing (may change):
+import psycopg2
 
-*	Panda
-*	Sql
-*	Matplotlib
-*	Sklearn
-*	Tableau
-*	Scikit-learn
-*	Random forest
-*	Etc---------------
+import sqlalchemy
+
+from sqlalchemy.ext.automap import automap_base
+
+from sqlalchemy.orm import Session
+
+from sqlalchemy import create_engine, func
+
 
 ## Questions to Answer:
 
