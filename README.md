@@ -136,4 +136,5 @@ For **cylinders** we changed the data type to float64 and remover the object cyl
 * ### Recategorize the State column
 To reduce the number of unique values in the state column we recategorized the state and arranged them into four region named as **west, midwest, northeast, and south**.
 
-
+* ### Worked on visualization to find Price Outliers
+We plotted some visuals to find price outliers for that we compared different features against price. An **Outlier** can cause serious problems in statistical analyses. Outliers are values within a dataset that vary greatly from the others—they’re either much larger, or significantly smaller. Outliers may indicate variabilities in a measurement, experimental errors, or a novelty. Therefore its important to remove outliers.
