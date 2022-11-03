@@ -130,5 +130,6 @@ In the image above you can see the name of columns we dropped out of total 26 co
 * ### Dropped Null Values
 Pandas DataFrame dropna() function is used to remove rows and columns with Null/NaN values which is basically missing data and it can cause error in Machine learning Model.
 
-
+* ### Format the Cylinder and Year column 
+For **cylinders** we changed the data type to float64 and remover the object cylinder to make it Numeric value also there were **257** cylinders categorized as **Others** we replace the value to **0**. For the **Year** column it was in decimal so we just changed the data type to integer to remove the decimal from this column. 
 
