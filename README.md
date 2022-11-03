@@ -16,10 +16,10 @@ This Data has 26 columns and 426880 rows.
 
 ![image](https://user-images.githubusercontent.com/105535250/199819404-a0f16653-e9dd-437e-97a8-251c9d1c3d5b.png)
 
-
---------(we can add data image here)-------------------
+Our plan is to make Price as our target variable and rest ww will pass as features. Also we will be dropping off null values and some columns that are not needed as they dont impact the price of the used cars much.
 
 ## Required Libraries:
+
 List of all necessary liblaries
 
 import numpy as np
