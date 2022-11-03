@@ -138,3 +138,7 @@ To reduce the number of unique values in the state column we recategorized the s
 
 * ### Worked on visualization to find Price Outliers
 We plotted some visuals to find price outliers for that we compared different features against price. An **Outlier** can cause serious problems in statistical analyses. Outliers are values within a dataset that vary greatly from the others—they’re either much larger, or significantly smaller. Outliers may indicate variabilities in a measurement, experimental errors, or a novelty. Therefore its important to remove outliers.
+--------------image will be added later-------------
+
+### Removing Outliers
+After visual interpretation, we realized that 
