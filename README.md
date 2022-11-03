@@ -107,3 +107,16 @@ We are team of four people.
 
 Shahla and Samantha are in charge of gathering information about the results of the dataset and what we want to achieve. Ryiochi was in charge of cleaning up the csv and dataset. Matthew was initializing our databases.
 
+# SEGMENT 2 SQUARE ROLE
+
+## Work Flow
+
+* Data Collection
+* Preprocessing/ Cleaning data
+* Training and Testing Data Split
+* Fitting Data to a Model
+* Evaluate the Model 
+
+
+
+
