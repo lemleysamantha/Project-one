@@ -117,6 +117,11 @@ Shahla and Samantha are in charge of gathering information about the results of 
 * Fitting Data to a Model
 * Evaluate the Model 
 
+### Data Collection
+We planned to work with pandas in jupyter notebook. For that we imported Panda Dependencies to create data frame. Data frames are more structured and tabular form and its more easier to process and analyze the data that way.
+
+### Preprocessing/ Cleaning Data
+We can not feed the raw data in the Machine learning model for that we worked on cleaning the data. 
 
 
 
