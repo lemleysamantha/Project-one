@@ -3,6 +3,7 @@
 
 ## Background:
 
+
 Over the past few years, the automotive industry has faced a shortage in the Semiconductor Integrate Chips globally. The Semicoductor IC is a critical component for controlling several electronic devices in the vehicle. 
 Even though the car industry is growing at a fast rate, the shortage is impeding the growth of new car production and sales. The new car sales industry is making up for the hsortage by raising their APR and prices. Therefore, there is a trend of increasing demand of used cars which is making the prices of used cars higher as well.
 Based on the current situation in the automotive industry, we have decided on predicting the prices of used cars for our project. Though it is a global issue, we will limit our studies and findings for US market only.
@@ -25,6 +26,7 @@ Our plan is to make Price as our target variable and rest ww will pass as featur
 import numpy as np
 
 import pandas as pd
+
 
 ### Libraries for visualization
 
@@ -58,10 +60,10 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, E
 
 ### Libraries for cross validation and model evaluation
 
-
 from sklearn.model_selection import train_test_split, cross_val_score
 
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+
 
 ### Libraries for SQL
 
@@ -75,7 +77,6 @@ from sqlalchemy.orm import Session
 
 from sqlalchemy import create_engine, func
 
-
 ## Questions to Answer:
 
 1.	How does the mileage affect the price of the used car?
@@ -83,7 +84,9 @@ from sqlalchemy import create_engine, func
 3.	How does the age of the car, condition and fuel type affect the price of the car?
 4.	Will this affect the overall demand for a used car in place of a new car for consumers?
 
+
 ## Quick review of Steps to be taken:
+
 Data Cleaning:
  that includes getting rid of all undesired columns
  
@@ -104,6 +107,7 @@ etc
 ## Group Details:
 
 We are team of four people. 
+
 
 Shahla and Samantha are in charge of gathering information about the results of the dataset and what we want to achieve. Ryiochi was in charge of cleaning up the csv and dataset. Matthew was initializing our databases.
 
@@ -163,3 +167,5 @@ for this we created four variables:
 **X_train, X_test, Y_train, and y_test**
 As we seperated the target from the data above, we then put all the data to train the module in the **X_train** variable and all the testing data in the variable **X_test**. The price of all the values from **X_train** will be stored in **y_train** and the price of all the values from **X_test** will be stored in **y_test**. 
 We then utilized train-test-split function which we imported from sklearn library and pass our **X** and **Y** variable in it to finally split our data into traing and testing. 
+
+
