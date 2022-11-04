@@ -124,7 +124,7 @@ Two tables are separately generated in PostgreSQL by creating connection to the 
 
 #### (Picture 1)
 
- <img src="https://github.com/Ryoichi2022/Neural_Network_Charity_Analysis/blob/main/Funding_Amount.png" width="320"/>  
+ <img src="https://github.com/lemleysamantha/Project-one/blob/main/Seg2_Database.png" width="320"/>  
 
 
 ## Data Exploration
