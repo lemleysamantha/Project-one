@@ -1,0 +1,17 @@
+2. Analysis
+
+	- Assume that nobody would like to purchase cars that are more than 20 years old.
+	- Also assume that nobody would try to avoid cars that have already travelled more than 200000 miles
+	- Price trend: The newer the year of entry is, the higher the used car price is.
+	- Clean title, gas, and automatic transmission looks like a standard. 
+	- Odometer of the car may affect the upper limit of the used car price.
+
+
+3. Preprocess
+	i.	Entries in 2000 or older were removed.
+	ii.	Odometer values larger than 200,000 (miles) were removed.
+	iii.	Removed other data than the following
+			a. Gas fuel
+			b. Clean status
+			c. Automatic transmission
+	iV.	Outliers were removed as they were identified during the process.
