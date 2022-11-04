@@ -11,7 +11,7 @@ https://www.kaggle.com/code/maciejautuch/car-price-prediction/data
 This dataset collected in Kaggle is mainly from craigslist.org (used item selling website) from all over US. These cars are from different manufacturers and of different years.
 --------(we can add data image here)-------------------
 
-https://public.tableau.com/authoring/Project-One/Sheet1#1
+https://public.tableau.com/authoring/Trial_16675235483750/Sheet1#1
 
 ## Required Libraries:
 List of all necessary liblaries
