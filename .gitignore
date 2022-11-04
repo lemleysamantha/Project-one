@@ -126,4 +126,12 @@ venv.bak/
 dmypy.json
 
 # Pyre type checker
+
+
 .pyre/
+
+/shahlasegment1/vehicles.csv
+
+
+
+
