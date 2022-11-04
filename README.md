@@ -11,6 +11,8 @@ https://www.kaggle.com/code/maciejautuch/car-price-prediction/data
 This dataset collected in Kaggle is mainly from craigslist.org (used item selling website) from all over US. These cars are from different manufacturers and of different years.
 --------(we can add data image here)-------------------
 
+https://public.tableau.com/authoring/Project-One/Sheet1#1
+
 ## Required Libraries:
 List of all necessary liblaries
 
@@ -87,6 +89,15 @@ Logistic Regression
 K&N Algorithm
 Decission Tree	
 etc
+
+## Data Exploration
+
+We explored the data by creating box plots and subplots. We were able to better visualize the large amount of data that was given in the excel spreadsheet file. We found that the outliers did not make much sense. For examnple, Oregon had an average price of car at 1.6 million and California had an average price 139,000. Based on what we know about markets, California's average price should be way higher than Oregon's. We have found that our data also is not in one currency which could have skewed the numbers.
+
+## Analysis
+
+We were able to analyze the data by using the boxplots to visualize the outliers. The actual prices and the predicted prices were shown through the scatterplot.We were using tableau to get a better understanding of the prices and regions.
+
 ## Group Details:
 
 We are team of four people. 
