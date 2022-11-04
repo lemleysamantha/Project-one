@@ -87,6 +87,43 @@ Logistic Regression
 K&N Algorithm
 Decission Tree	
 etc
+
+## Database
+### Main Table
+During the exploratory phase, we decided to select the following in the main tabel as they appears relevant to the used car price
+		a. id
+		b. price
+		c. year
+		d. manufacturer
+		e. model
+		f. condition
+		g. cylinders
+		h. fuel
+		i. odometer
+		j. title_status
+		k. transmission
+		l. drive
+		m. type	
+
+### Sub Table
+In a meantime, we decided to use the following as supplemental information.
+		a. id
+		n. url
+		o. region
+		p. region_url
+		q. VIN
+		r. paint_color
+		s. image_url
+		t. description
+		u. state
+		v. posting_date
+
+Two tables are separately generated in PostgreSQL by creating connection to the database software. As an example, two tables are joined together as in picture 1 to create a new table including price, print_color, and image_url.
+
+#### (Picture 1)
+
+ <img src="https://github.com/Ryoichi2022/Neural_Network_Charity_Analysis/blob/main/Funding_Amount.png" width="320"/>  
+
 ## Group Details:
 
 We are team of four people. 
