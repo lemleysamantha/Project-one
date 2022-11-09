@@ -5,7 +5,13 @@
 
 Over the past few years, the automotive industry has faced a shortage in the Semiconductor Integrate Chips globally. The Semicoductor IC is a critical component for controlling several electronic devices in the vehicle. 
 Even though the car industry is growing at a fast rate, the shortage is impeding the growth of new car production and sales. The new car sales industry is making up for the hsortage by raising their APR and prices. Therefore, there is a trend of increasing demand of used cars which is making the prices of used cars higher as well.
-Based on the current situation in the automotive industry, we have decided on predicting the prices of used cars for our project. Though it is a global issue, we will limit our studies and findings for US market only.
+
+## Objective:
+Based on the current situation in the automotive industry, we have decided on predicting the prices of used cars for our project using the set of variables in the data set. Using Scikit learn to create following 2 different Machine Learning techniques:
+* DecissionTress Regressor
+* Linear Regression Model
+
+Though it is a global issue, we will limit our studies and findings for US market only.
 
 
 ## Data Sources:
@@ -17,6 +23,9 @@ This Data has 26 columns and 426880 rows.
 ![image](https://user-images.githubusercontent.com/105535250/199819404-a0f16653-e9dd-437e-97a8-251c9d1c3d5b.png)
 
 Our plan is to make Price as our target variable and rest ww will pass as features. Also we will be dropping off null values and some columns that are not needed as they dont impact the price of the used cars much.
+
+## Objective: 
+Our objective is to predict whether this affect the overall demand for a used car in place of a new car for consumers  an individual’s annual income exceeds $50,000 USD using the set of variables in this data set. Read this file in directly from the URL address, named it "adult". Using Scikit learn to create following 4 different Machine Learning techniques:
 
 ## Required Libraries:
 
