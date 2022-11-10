@@ -179,18 +179,36 @@ After visual interpretation, we realized that the lower 5% of the data has very 
 
 ![image](https://user-images.githubusercontent.com/105535250/201024542-736df38f-625c-43c2-9a8b-b7b352525008.png)
 
-
-
-
-
 * ### One hot encoding
 One hot encoding can be defined as the essential process of converting the categorical data variables to be provided to machine and deep learning algorithms which in turn improve predictions as well as classification accuracy of a model. We utized one hot encoding for converting our categorical features which are present in many of our columns like **fuel, manufacturer, model, condition, transmission, drive , etc**.
 
 ## Machine Learning Models Selection
 We selected to work on:
-* Decision Tree Regressor
+
+* ## Decision Tree Regressor
+Decision Tree is one of the most commonly used, practical approaches for supervised learning. It can be used to solve both Regression and Classification tasks with the latter being put more into practical application. It is used by the Train Using AutoML tool and classifies or regresses the data using true or false answers to certain questions. The resulting structure, when visualized, is in the form of a tree with different types of nodes—root, internal, and leaf.
+
+![image](https://user-images.githubusercontent.com/105535250/201030320-ce757d60-9499-4c49-82fc-737b211c345f.png)
+
+### Advantages
+There are many advantages of this model. some of them are:
+
+1- It can be used for both classification and regression problems: Decision trees can be used to predict both continuous and discrete values i.e. they work well in both regression and classification tasks.
+
+2- It can capture nonlinear relationships: They can be used to classify non-linearly separable data.
+
+3- It does not require any transformation of the features if we are dealing with non-linear data because he data type of decision tree can handle any type of data whether it is numerical or categorical, or boolean.
+
+4- Easy to understand, interpret, visualize.
+
+5- Less data preparation needed: In the decision tree, there is no effect by the outsider or missing data in the node of the tree, that’s why the decision tree requires fewer data.
+
+6- Decision tree is non-parametric: Non-Parametric method is defined as the method in which there are no assumptions about the spatial distribution and the classifier structure.
+
 * Linear Regression Model
-* Lasso Model
+
+
+
 
 ## Split the Data and Target
 We then fed the data in the Machine Learning Model and using the features of the dataset, we  split the processed data into training and testing data. We trained our machine learning algorithm with training data then we tested or evaluated our machine learning model with the test data.
