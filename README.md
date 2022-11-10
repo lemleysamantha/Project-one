@@ -82,6 +82,10 @@ from sqlalchemy import create_engine, func
 1.	How does the age of the car, condition and fuel type affect the price of the car?
 2.	Will this affect the overall demand for a used car in place of a new car for consumers?
 
+ Technologies, languages, tools, and algorithms 
+used throughout project 
+
+
 ## Quick review of Steps to be taken:
 Data Cleaning:
  that includes getting rid of all undesired columns
