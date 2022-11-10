@@ -44,6 +44,7 @@ A Python library is a collection or package of various modules. It contains bund
 
 ### Libraries for data processing 
 import numpy as np
+
 import pandas as pd
 
 ### Libraries for visualization
