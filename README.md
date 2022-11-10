@@ -303,7 +303,11 @@ Linear Regression may be one of the most commonly used models in the real world.
 
 ## Split the Training Data and Testing/Target Data
 
-Separating data into training and testing sets is an important part of evaluating machine learning models. Typically, when we separate a data set into a training set and testing set, most of the data is used for training, and a smaller portion of the data is used for testing. By using similar data for training and testing, we can minimize the effects of data discrepancies and better understand the characteristics of the model. We used sklearn library to imoprt: **sklearn.model_selection import train_test_split**. Train_test_split is a function in Sklearn model selection for splitting data arrays into two subsets: for training data and for testing data. With this function, you don't need to divide the dataset manually. By default, Sklearn train_test_split will make 25:75 random partitions for the two subsets. But with our dataset I found better results when i divide datasets to 20:80 ratio. 
+### Purpose to split
+Separating data into training and testing sets is an important part of evaluating machine learning models. Typically, when we separate a data set into a training set and testing set, most of the data is used for training, and a smaller portion of the data is used for testing. By using similar data for training and testing, we can minimize the effects of data discrepancies and better understand the characteristics of the model. 
+
+### Process of splitting
+We used sklearn library to imoprt: **sklearn.model_selection import train_test_split**. Train_test_split is a function in Sklearn model selection for splitting data arrays into two subsets: for training data and for testing data. With this function, you don't need to divide the dataset manually. By default, Sklearn train_test_split will make 25:75 random partitions for the two subsets. But with our dataset we found better results when we divide datasets to 20:80 ratio. We then fed the data in the Machine Learning Model and using the features of the dataset, we  split the processed data into training and testing data. We trained our machine learning algorithm with training data then we tested or evaluated our machine learning model with the test data.first we created two variable **X** and **Y** to split data and the target. We stored **Price** in **Y** which is our target variable and pass rest of the features in varaible **X**. 
 
 ## Creating Training and Testing dataset
 for this we created four variables:
@@ -312,6 +316,52 @@ for this we created four variables:
 As we seperated the target from the data above, we then put all the data to train the module in the **X_train** variable and all the testing data in the variable **X_test**. The price of all the values from **X_train** will be stored in **y_train** and the price of all the values from **X_test** will be stored in **y_test**. 
 We then utilized train-test-split function which we imported from sklearn library and pass our **X** and **Y** variable in it to finally split our data into traing and testing. 
 
-After a model has been processed by using the training set, you test the model by making predictions against the test set. Because the data in the testing set already contains known values for the attribute that you want to predict, it is easy to determine whether the model's guesses are correct.
-We then fed the data in the Machine Learning Model and using the features of the dataset, we  split the processed data into training and testing data. We trained our machine learning algorithm with training data then we tested or evaluated our machine learning model with the test data.
-first we created two variable **X** and **Y** to split data and the target. We stored **Price** in **Y** which is our target variable and pass rest of the features in varaible **X**. 
+## Loaded Decission Tree Regressor
+We first load DecissionTree Regressor to test our data. We imported the regressor:
+
+from sklearn.tree import DecisionTreeRegressor 
+![image](https://user-images.githubusercontent.com/105535250/201184674-f18b061a-f1c0-4f9b-9f5d-f97df5db559d.png)
+
+### GridSearchCV
+GridSearchCV is a useful tool to fine tune the parameters of your model, depending on the estimator being used. We imported:
+
+from sklearn.model_selection import GridSearchCV
+
+It runs through all the different parameters that is fed into the parameter grid and produces the best combination of parameters, based on a scoring metric of your choice. Obviously, nothing is perfect and GridSearchCV is no exception:
+
+* “best parameters” results are limited
+* process is time-consuming
+
+![image](https://user-images.githubusercontent.com/105535250/201186727-5fc6491d-1426-446e-b309-2bb69eba8824.png)
+
+Based on the results from GridSearchCV our best bet is to choose the max depth 11, though we tested our data with depth 10 aswell.
+
+## Prediction on Testing Data depth 11
+
+After a model has been processed by using the training set, we test the model by making predictions against the test set. Because the data in the testing set already contains known values for the attribute that we want to predict, it is easy to determine whether the model's guesses are correct.
+
+![image](https://user-images.githubusercontent.com/105535250/201189328-d9cb9ebe-52e8-4ca9-8f49-1241f697e48d.png)
+
+## Prediction on Training Data depth 11
+We similarly then predicted on training data.
+
+![image](https://user-images.githubusercontent.com/105535250/201189544-1757a4ff-ec2e-4629-b9a3-211dcd840dfa.png)
+
+## Prediction on Testing Data depth 10
+We followed the same steps to predict on testing data with depth 10.
+
+![image](https://user-images.githubusercontent.com/105535250/201190000-7d8755b7-2c58-4e3c-82e0-29a5a6e42ffa.png)
+
+## Prediction on Training Data depth 10
+We followed the same steps to predict on training data with depth 10.
+
+![image](https://user-images.githubusercontent.com/105535250/201190157-94accaf1-6cf7-4a40-9842-d7d6c53e1763.png)
+
+## Decission Tree Regressor Model Evaluation 
+
+
+
+
+
+
+
