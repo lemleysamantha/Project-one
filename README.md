@@ -43,9 +43,7 @@ Google Slides is an online presentation app that lets you create and format pres
 A Python library is a collection or package of various modules. It contains bundles of code that can be used repeatedly in different programs.
 
 ### Libraries for data processing 
-
 import numpy as np
-
 import pandas as pd
 
 ### Libraries for visualization
