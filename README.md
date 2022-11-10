@@ -17,7 +17,15 @@ Though it is a global issue, we will limit our studies and findings for US marke
 https://www.kaggle.com/code/maciejautuch/car-price-prediction/data
 This dataset collected in Kaggle is mainly from craiglist.org (used item selling website) from all over US. These cars are from different manufacturers and of different years.
 
-This Data has 26 columns and 426880 rows.
+## Dataset:
+* The original dataset contains 426,880 rows with 26 columns.
+* Based on relevance of each column to our analysis and the number of available, i.e., not NaN, values in the column, decided to focus on the fullowing columns:
+Price, year, manufacturer, model, condition, cylinders, fuel, odometer, title status, transmission, drive, and type
+* Any rows that include NaN data have been removed from the dataset, which then contains 103577 rows with 12 columns.
+		i)	Id, price, year, and odometer are numerical.
+		ii)	Manufacturer, model, condition, cylinders, fuel, title status, transmission, drive, and type are object.
+* Id and year could be converted into object and date, respectively.
+* In addition, cylinders will be processed and used as number for further analysis.
 
 ![image](https://user-images.githubusercontent.com/105535250/199819404-a0f16653-e9dd-437e-97a8-251c9d1c3d5b.png)
 
@@ -126,18 +134,7 @@ We planned to work with pandas in jupyter notebook. For that we imported Panda D
 * Odometer of the car may affect the upper limit of the used car price.
 
 
-
-
-3. Preprocess
-	i.	Entries in 2000 or older were removed.
-	ii.	Odometer values larger than 200,000 (miles) were removed.
-	iii.	Removed other data than the following
-			a. Gas fuel
-			b. Clean status
-			c. Automatic transmission
 	iV.	Outliers were removed as they were identified during the process.
-
-
 
 ## Preprocessing/ Cleaning Data
 We can not feed the raw data in the Machine learning model for that we worked on cleaning the data. 
@@ -154,12 +151,16 @@ For **cylinders** we changed the data type to float64 and remover the object cyl
 
 * ### Year Entries 
 Considering the age of the cars can be an important variable, we tried to improve data by dropping the data in which car price is more than 20 years old setting Year Entries for 2000 or older were removed
+![image](https://user-images.githubusercontent.com/105535250/201019725-cbfd5a53-9d7b-4aac-a23d-edbcbdfb0fdb.png)
+
 
 * ### Odometer values 
 Odometer values larger than 200,000 (miles) were removed.
+![image](https://user-images.githubusercontent.com/105535250/201019426-821f0822-610b-4222-bf7e-28a9a29da39c.png)
 
-* ### Recategorize the State column
-To reduce the number of unique values in the state column we recategorized the state and arranged them into four region named as **west, midwest, northeast, and south**.
+
+* ### Recategorize the State column to Area
+To reduce the number of unique values in the state column we recategorized the state and arranged them into four region named as **west, midwest, northeast, and south** given new column name as Area
 
 * ### Worked on visualization to find Price Outliers
 We plotted some visuals to find price outliers for that we compared different features against price. An **Outlier** can cause serious problems in statistical analyses. Outliers are values within a dataset that vary greatly from the others—they’re either much larger, or significantly smaller. Outliers may indicate variabilities in a measurement, experimental errors, or a novelty. Therefore its important to remove outliers.
@@ -167,6 +168,9 @@ We plotted some visuals to find price outliers for that we compared different fe
 
 * ### Removing Outliers
 After visual interpretation, we realized that the lower 5% of the data has very low number of values and the upper 5% of the data was mainly very distinctive values. Therefore we decide to drop that portion of the data and set out Price range from 5th to 95th percentile. 
+
+![image](https://user-images.githubusercontent.com/105535250/201020236-016a36ed-771d-49e6-9d74-d90df9772c11.png)
+
 
 * ### One hot encoding
 One hot encoding can be defined as the essential process of converting the categorical data variables to be provided to machine and deep learning algorithms which in turn improve predictions as well as classification accuracy of a model. We utized one hot encoding for converting our categorical features which are present in many of our columns like **fuel, manufacturer, model, condition, transmission, drive , etc**.
