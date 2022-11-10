@@ -5,8 +5,13 @@
 
 Over the past few years, the automotive industry has faced a shortage in the Semiconductor Integrate Chips globally. The Semicoductor IC is a critical component for controlling several electronic devices in the vehicle. 
 Even though the car industry is growing at a fast rate, the shortage is impeding the growth of new car production and sales. The new car sales industry is making up for the hsortage by raising their APR and prices. Therefore, there is a trend of increasing demand of used cars which is making the prices of used cars higher as well.
-Based on the current situation in the automotive industry, we have decided on predicting the prices of used cars for our project. Though it is a global issue, we will limit our studies and findings for US market only.
 
+## Objective:
+Based on the current situation in the automotive industry, we have decided on predicting the prices of used cars for our project using the set of variables in the data set. Using Scikit learn to create following 2 different Machine Learning techniques:
+* DecissionTress Regressor
+* Linear Regression Model
+
+Though it is a global issue, we will limit our studies and findings for US market only.
 
 ## Data Sources:
 https://www.kaggle.com/code/maciejautuch/car-price-prediction/data
@@ -18,7 +23,27 @@ This Data has 26 columns and 426880 rows.
 
 Our plan is to make Price as our target variable and rest ww will pass as features. Also we will be dropping off null values and some columns that are not needed as they dont impact the price of the used cars much.
 
-## Required Libraries:
+# Technologies, languages, tools, and algorithms used throughout project 
+* ## Postgres pgAdmin (SQL)
+PostgreSQL, also known as Postgres, is an open-source relational database with a strong reputation for its reliability, flexibility and support of open technical standards. PostgreSQL supports both non-relational and relational data types. pgAdmin is the community client for using PostgreSQL. It is usually installed along with PostgreSQL. While psql is a simple command-line tool, pgAdmin is a graphical user interface that provides pretty much the same functionality.
+
+* ### Python
+Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems.
+
+* ### Pandas
+Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,built on top of the Python programming language.
+
+* ### Machine Learning Model
+ML models are the mathematical engines of Artificial Intelligence, expressions of algorithms that find patterns and make predictions faster than a human can.
+
+* ### Tableau
+Tableau Software is a tool that helps make Big Data small, and small data insightful and actionable. The main use of tableau software is to help people see and understand their data.
+
+* ### Google Slide
+Google Slides is an online presentation app that lets you create and format presentations and work with other people.
+
+## Requirements for Machine Learning Model:
+A Python library is a collection or package of various modules. It contains bundles of code that can be used repeatedly in different programs.
 
 ### Libraries for data processing 
 
@@ -34,8 +59,6 @@ import plotly.express as px
 
 import seaborn as sns
 
-import pandas_profiling as pp
-
 ### Libraries for preprocessing
 
 from sklearn import preprocessing
@@ -44,24 +67,23 @@ from sklearn.preprocessing import StandardScaler
 
 from sklearn.preprocessing import PolynomialFeatures
 
+from sklearn.preprocessing import StandardScaler,OneHotEncoder
+
 ### Liblaries for models
 
 from sklearn.linear_model import LinearRegression, Ridge
 
-from sklearn.naive_bayes import GaussianNB
-
-from sklearn.neighbors import KNeighborsRegressor
-
 from sklearn.tree import DecisionTreeRegressor
 
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, ExtraTreesRegressor, BaggingRegressor
-
 ### Libraries for cross validation and model evaluation
-
 
 from sklearn.model_selection import train_test_split, cross_val_score
 
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+
+from sklearn.pipeline import Pipeline
+
+from sklearn.model_selection import GridSearchCV, cross_val_score
 
 ### Libraries for SQL
 
@@ -75,51 +97,47 @@ from sqlalchemy.orm import Session
 
 from sqlalchemy import create_engine, func
 
-
 ## Questions to Answer:
 
-1.	How does the mileage affect the price of the used car?
-2.	How does size of the car impact the price?
-3.	How does the age of the car, condition and fuel type affect the price of the car?
-4.	Will this affect the overall demand for a used car in place of a new car for consumers?
+1.	How does the age of the car, condition and fuel type affect the price of the car?
 
-## Quick review of Steps to be taken:
-Data Cleaning:
- that includes getting rid of all undesired columns
- 
-Creating table in SQL
+2.	Will this affect the overall demand for a used car in place of a new car for consumers?
 
-Utilize Tableau 
-
-Machine Learning Model:
-this includes choosing **X** variable as a **collection of features** and **Y** as a target variable which will be **Price**
-
-Model for Regression
-
-Linear Regression
-Logistic Regression
-K&N Algorithm
-Decission Tree	
-etc
-## Group Details:
-
-We are team of four people. 
-
-Shahla and Samantha are in charge of gathering information about the results of the dataset and what we want to achieve. Ryiochi was in charge of cleaning up the csv and dataset. Matthew was initializing our databases.
-
-# SEGMENT 2 SQUARE ROLE
-
-## Work Flow
+# Work Flow
 
 * Data Collection
 * Preprocessing/ Cleaning data
+* Creating table in SQL
 * Machine Learning Model Selection
 * Split the data into Training and Testing 
 * Fitting Data to a Model
 * Evaluate the Model 
+* Utilize Tableau and Google Slide for Visualization and Presentation
 
 ## Data Collection
 We planned to work with pandas in jupyter notebook. For that we imported Panda Dependencies to create data frame. Data frames are more structured and tabular form and its more easier to process and analyze the data that way.
+
+## Assumptions set for Preprocessing
+
+* Assume that nobody would like to purchase cars that are more than 20 years old.
+* Also assume that buyers would avoid cars that have already travelled more than 200000 miles
+* Price trend: The newer the year of entry is, the higher the used car price is.
+* Clean title, gas, and automatic transmission looks like a standard. 
+* Odometer of the car may affect the upper limit of the used car price.
+
+
+
+
+3. Preprocess
+	i.	Entries in 2000 or older were removed.
+	ii.	Odometer values larger than 200,000 (miles) were removed.
+	iii.	Removed other data than the following
+			a. Gas fuel
+			b. Clean status
+			c. Automatic transmission
+	iV.	Outliers were removed as they were identified during the process.
+
+
 
 ## Preprocessing/ Cleaning Data
 We can not feed the raw data in the Machine learning model for that we worked on cleaning the data. 
@@ -133,6 +151,12 @@ Pandas DataFrame dropna() function is used to remove rows and columns with Null/
 
 * ### Format the Cylinder and Year column 
 For **cylinders** we changed the data type to float64 and remover the object cylinder to make it Numeric value also there were **257** cylinders categorized as **Others** we replace the value to **0**. For the **Year** column it was in decimal so we just changed the data type to integer to remove the decimal from this column. 
+
+* ### Year Entries 
+Considering the age of the cars can be an important variable, we tried to improve data by dropping the data in which car price is more than 20 years old setting Year Entries for 2000 or older were removed
+
+* ### Odometer values 
+Odometer values larger than 200,000 (miles) were removed.
 
 * ### Recategorize the State column
 To reduce the number of unique values in the state column we recategorized the state and arranged them into four region named as **west, midwest, northeast, and south**.
