@@ -117,6 +117,28 @@ from sqlalchemy import create_engine, func
 ## Data Collection
 We planned to work with pandas in jupyter notebook. For that we imported Panda Dependencies to create data frame. Data frames are more structured and tabular form and its more easier to process and analyze the data that way.
 
+## Assumptions set for Preprocessing
+
+* Assume that nobody would like to purchase cars that are more than 20 years old.
+* Also assume that buyers would avoid cars that have already travelled more than 200000 miles
+* Price trend: The newer the year of entry is, the higher the used car price is.
+* Clean title, gas, and automatic transmission looks like a standard. 
+* Odometer of the car may affect the upper limit of the used car price.
+
+
+
+
+3. Preprocess
+	i.	Entries in 2000 or older were removed.
+	ii.	Odometer values larger than 200,000 (miles) were removed.
+	iii.	Removed other data than the following
+			a. Gas fuel
+			b. Clean status
+			c. Automatic transmission
+	iV.	Outliers were removed as they were identified during the process.
+
+
+
 ## Preprocessing/ Cleaning Data
 We can not feed the raw data in the Machine learning model for that we worked on cleaning the data. 
 
@@ -129,6 +151,10 @@ Pandas DataFrame dropna() function is used to remove rows and columns with Null/
 
 * ### Format the Cylinder and Year column 
 For **cylinders** we changed the data type to float64 and remover the object cylinder to make it Numeric value also there were **257** cylinders categorized as **Others** we replace the value to **0**. For the **Year** column it was in decimal so we just changed the data type to integer to remove the decimal from this column. 
+
+* ### Entries in 2000 or older were removed
+Considering the age of the cars can be an important variable we tried to improve data by dropping the data in which car price is more than 20 years old.
+
 
 * ### Recategorize the State column
 To reduce the number of unique values in the state column we recategorized the state and arranged them into four region named as **west, midwest, northeast, and south**.
