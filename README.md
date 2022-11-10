@@ -405,7 +405,8 @@ The r square result from linear regression model is: R^2 train: 0.757, test: 0.7
 
 After evaluating both models, we find Decission Tree Regressor model better fit for our dataset as its r square value is higher then in the Linear Regression Model.
 
-
+## Tableau and Google Slide
+We tried to put everything togather and present it as a presentation utilizing Tableau for our visuals to help the viewer understand it as easy possible. 
 
 
 
