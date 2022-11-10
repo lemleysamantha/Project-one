@@ -193,19 +193,32 @@ Decision Tree is one of the most commonly used, practical approaches for supervi
 ### Advantages
 There are many advantages of this model. some of them are:
 
-1- It can be used for both classification and regression problems: Decision trees can be used to predict both continuous and discrete values i.e. they work well in both regression and classification tasks.
+1- Compared to other algorithms decision trees requires less effort for data preparation during pre-processing.
 
-2- It can capture nonlinear relationships: They can be used to classify non-linearly separable data.
+2- A decision tree does not require normalization of data.
 
-3- It does not require any transformation of the features if we are dealing with non-linear data because he data type of decision tree can handle any type of data whether it is numerical or categorical, or boolean.
+3- A decision tree does not require scaling of data as well.
 
-4- Easy to understand, interpret, visualize.
+4- Missing values in the data also do NOT affect the process of building a decision tree to any considerable extent.
 
-5- Less data preparation needed: In the decision tree, there is no effect by the outsider or missing data in the node of the tree, that’s why the decision tree requires fewer data.
+5- A Decision tree model is very intuitive and easy to explain to technical teams as well as stakeholders and can be used for both classification and regression problems.
 
-6- Decision tree is non-parametric: Non-Parametric method is defined as the method in which there are no assumptions about the spatial distribution and the classifier structure.
+### Disadvantages
 
-* Linear Regression Model
+1- A small change in the data can cause a large change in the structure of the decision tree causing instability.
+
+2- Decision tree often involves higher time to train the model.
+
+3- Decision tree training is relatively expensive as the complexity and time has taken are more.
+
+4- The Decision Tree algorithm is inadequate for applying regression and predicting continuous values.
+
+5- It can’t be used in big data: If the size of data is too big, then one single tree may grow a lot of nodes which might result in complexity and leads to overfitting.
+
+* ## Linear Regression Model
+
+
+
 
 
 
