@@ -13,7 +13,6 @@ Based on the current situation in the automotive industry, we have decided on pr
 
 Though it is a global issue, we will limit our studies and findings for US market only.
 
-
 ## Data Sources:
 https://www.kaggle.com/code/maciejautuch/car-price-prediction/data
 This dataset collected in Kaggle is mainly from craiglist.org (used item selling website) from all over US. These cars are from different manufacturers and of different years.
@@ -23,9 +22,6 @@ This Data has 26 columns and 426880 rows.
 ![image](https://user-images.githubusercontent.com/105535250/199819404-a0f16653-e9dd-437e-97a8-251c9d1c3d5b.png)
 
 Our plan is to make Price as our target variable and rest ww will pass as features. Also we will be dropping off null values and some columns that are not needed as they dont impact the price of the used cars much.
-
-## Objective: 
-Our objective is to predict whether this affect the overall demand for a used car in place of a new car for consumers  an individual’s annual income exceeds $50,000 USD using the set of variables in this data set. Read this file in directly from the URL address, named it "adult". Using Scikit learn to create following 4 different Machine Learning techniques:
 
 ## Required Libraries:
 
@@ -43,8 +39,6 @@ import plotly.express as px
 
 import seaborn as sns
 
-import pandas_profiling as pp
-
 ### Libraries for preprocessing
 
 from sklearn import preprocessing
@@ -53,17 +47,13 @@ from sklearn.preprocessing import StandardScaler
 
 from sklearn.preprocessing import PolynomialFeatures
 
+from sklearn.preprocessing import StandardScaler,OneHotEncoder
+
 ### Liblaries for models
 
 from sklearn.linear_model import LinearRegression, Ridge
 
-from sklearn.naive_bayes import GaussianNB
-
-from sklearn.neighbors import KNeighborsRegressor
-
 from sklearn.tree import DecisionTreeRegressor
-
-from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, ExtraTreesRegressor, BaggingRegressor
 
 ### Libraries for cross validation and model evaluation
 
@@ -71,6 +61,10 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, E
 from sklearn.model_selection import train_test_split, cross_val_score
 
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+
+from sklearn.pipeline import Pipeline
+
+from sklearn.model_selection import GridSearchCV, cross_val_score
 
 ### Libraries for SQL
 
@@ -84,13 +78,9 @@ from sqlalchemy.orm import Session
 
 from sqlalchemy import create_engine, func
 
-
 ## Questions to Answer:
-
-1.	How does the mileage affect the price of the used car?
-2.	How does size of the car impact the price?
-3.	How does the age of the car, condition and fuel type affect the price of the car?
-4.	Will this affect the overall demand for a used car in place of a new car for consumers?
+1.	How does the age of the car, condition and fuel type affect the price of the car?
+2.	Will this affect the overall demand for a used car in place of a new car for consumers?
 
 ## Quick review of Steps to be taken:
 Data Cleaning:
