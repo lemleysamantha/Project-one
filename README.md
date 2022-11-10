@@ -30,6 +30,9 @@ PostgreSQL, also known as Postgres, is an open-source relational database with a
 * ### Python
 Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems.
 
+* ### Pandas
+Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,built on top of the Python programming language.
+
 * ### Machine Learning Model
 ML models are the mathematical engines of Artificial Intelligence, expressions of algorithms that find patterns and make predictions faster than a human can.
 
