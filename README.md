@@ -163,7 +163,11 @@ Odometer values larger than 200,000 (miles) were removed.
 To reduce the number of unique values in the state column we recategorized the state and arranged them into four region named as **west, midwest, northeast, and south** given new column name as Area
 
 * ### Worked on visualization to find Price Outliers
-We plotted some visuals to find price outliers for that we compared different features against price. An **Outlier** can cause serious problems in statistical analyses. Outliers are values within a dataset that vary greatly from the others—they’re either much larger, or significantly smaller. Outliers may indicate variabilities in a measurement, experimental errors, or a novelty. Therefore its important to remove outliers.
+An **Outlier** can cause serious problems in statistical analyses. Outliers are values within a dataset that vary greatly from the others—they’re either much larger, or significantly smaller. Outliers may indicate variabilities in a measurement, experimental errors, or a novelty. Therefore its important to remove outliers.
+
+![image](https://user-images.githubusercontent.com/105535250/201022939-d19184a9-53ce-4a0a-a424-1aadb85b674c.png)
+
+We plotted some visuals to find price outliers for that we compared Year features against price. 
 --------------image will be added later-------------
 
 * ### Removing Outliers
