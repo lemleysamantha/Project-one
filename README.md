@@ -191,7 +191,7 @@ After visual interpretation, we realized that the lower 5% of the data has very 
 ## Database - Worked in pgAdmin
 ### Main Table
 During the exploratory phase, we decided to select the following in the main tabel as they appears relevant to the used car price
-	  a. id 		  h. fuel
+	* a. id 		* h. fuel
 	
 	* b. price		* i. odometer		
 	
@@ -203,26 +203,24 @@ During the exploratory phase, we decided to select the following in the main tab
 	
 	* f. condition		* m. type				
 	
-	* g. cylinders
-	
-	
-	
-	
-	
-		
+	* g. cylinders		
 
 ### Sub Table
 In a meantime, we decided to use the following as supplemental information.
-	- a. id
-	- n. url
-	- o. region
-	- p. region_url
-	- q. VIN
-	- r. paint_color
-	- s. image_url
-	- t. description
-	- u. state
-	- v. posting_date
+	- a. id			- r. paint_color
+	
+	- n. url		- s. image_url
+	
+	- o. region		- t. description
+	
+	- p. region_url		- u. state
+	
+	- q. VIN		- v. posting_date
+	
+	
+	
+	
+	
 
 Two tables are separately generated in PostgreSQL by creating connection to the database software. As an example, two tables are joined together as in picture 1 to create a new table including price, print_color, and image_url.
 
