@@ -23,6 +23,16 @@ This Data has 26 columns and 426880 rows.
 
 Our plan is to make Price as our target variable and rest ww will pass as features. Also we will be dropping off null values and some columns that are not needed as they dont impact the price of the used cars much.
 
+# Technologies, languages, tools, and algorithms used throughout project 
+* ## Postgres pgAdmin (SQL)
+PostgreSQL, also known as Postgres, is an open-source relational database with a strong reputation for its reliability, flexibility and support of open technical standards. PostgreSQL supports both non-relational and relational data types. pgAdmin is the community client for using PostgreSQL. It is usually installed along with PostgreSQL. While psql is a simple command-line tool, pgAdmin is a graphical user interface that provides pretty much the same functionality.
+
+* ### Python
+Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems.
+
+* ### Machine Learning Model
+ML models are the mathematical engines of Artificial Intelligence, expressions of algorithms that find patterns and make predictions faster than a human can.
+
 ## Required Libraries:
 
 ### Libraries for data processing 
