@@ -191,7 +191,7 @@ After visual interpretation, we realized that the lower 5% of the data has very 
 ## Database - Worked in pgAdmin
 ### Main Table
 During the exploratory phase, we decided to select the following in the main tabel as they appears relevant to the used car price
-	* a. id 		* h. fuel
+	  a. id 		  h. fuel
 	
 	* b. price		* i. odometer		
 	
