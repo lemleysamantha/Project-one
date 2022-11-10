@@ -357,7 +357,39 @@ We followed the same steps to predict on training data with depth 10.
 
 ![image](https://user-images.githubusercontent.com/105535250/201190157-94accaf1-6cf7-4a40-9842-d7d6c53e1763.png)
 
-## Decission Tree Regressor Model Evaluation 
+## Decission Tree Regressor Model Evaluation with R square Method
+The more the Rsquare value the better is the model perfprmance.-----need to add more explaination
+
+R square with depth 11
+![image](https://user-images.githubusercontent.com/105535250/201196860-a80c6b3f-cef7-45e1-8f75-0adc0b4ce9ab.png)
+
+R square with depth 10
+![image](https://user-images.githubusercontent.com/105535250/201197047-07590a2d-2758-47e8-a51b-0ab93c9b68bb.png)
+
+## Loaded Linear Regression Model
+The second model we tested out data is Linear Regression model. We imported:
+
+from sklearn.linear_model import LinearRegression
+![image](https://user-images.githubusercontent.com/105535250/201197259-dbfc6c70-2818-4db2-90ce-5c19edc4a7b0.png)
+
+## Fitting Data
+![image](https://user-images.githubusercontent.com/105535250/201198134-c03fca3e-069c-4ef3-9c99-c0be95ed14f2.png)
+
+## Prediction on Testing Data
+
+![image](https://user-images.githubusercontent.com/105535250/201198307-ba8db446-e87f-4e63-bc6d-398d1e494f14.png)
+
+
+## Prediction on Training Data
+
+![image](https://user-images.githubusercontent.com/105535250/201198490-d355a4d4-5bb7-4ee3-a7b9-bb99d9751de5.png)
+
+
+## Linear Regression Model Evaluation with R square Method
+
+![image](https://user-images.githubusercontent.com/105535250/201199107-f7affea5-8ea6-438e-a3bc-82b971feef30.png)
+
+## Comparison between two models
 
 
 
