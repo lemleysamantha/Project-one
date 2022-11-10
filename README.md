@@ -358,17 +358,19 @@ We followed the same steps to predict on training data with depth 10.
 ![image](https://user-images.githubusercontent.com/105535250/201190157-94accaf1-6cf7-4a40-9842-d7d6c53e1763.png)
 
 ## Decission Tree Regressor Model Evaluation with R square Method
-R-squared (R2) is a statistical measure that represents the proportion of the variance for a dependent variable that's explained by an independent variable or variables in a regression model.  R-squared explains to what extent the variance of one variable explains the variance of the second variable. 
-So, if the R2 of a model is **R^2 train: 0.799, test: 0.772**, then approximately 0.80% for the training data and 0.78% of the testing data observed variation can be explained by the model's inputs.
-R-Squared is a statistical measure of fit that indicates how much variation of a dependent variable is explained by the independent variable(s) in a regression model.
+R-squared (R2) is a statistical measure of fit that indicates how much variation of a dependent variable is explained by the independent variable(s) in a regression model.  R-squared explains to what extent the variance of one variable explains the variance of the second variable. 
+
+R-squared values range from 0 to 1 and are commonly stated as percentages from 0% to 100%. An R-squared of 100% means that all movements of a dependent variable are completely explained by movements in the independent variable(s).
 
 The more the Rsquare value the better is the model perfprmance.-----need to add more explaination
 
-R square with depth 11
+### R square with depth 11
 ![image](https://user-images.githubusercontent.com/105535250/201196860-a80c6b3f-cef7-45e1-8f75-0adc0b4ce9ab.png)
 
-R square with depth 10
+### R square with depth 10
 ![image](https://user-images.githubusercontent.com/105535250/201197047-07590a2d-2758-47e8-a51b-0ab93c9b68bb.png)
+
+So, if the R2 of a model is **R^2 train: 0.799, test: 0.772**, then approximately 0.80% for the training data and 0.78% of the testing data observed variation can be explained by the model's inputs. The more the Rsquare value the better is the model perfprmance.
 
 ## Loaded Linear Regression Model
 The second model we tested out data is Linear Regression model. We imported:
