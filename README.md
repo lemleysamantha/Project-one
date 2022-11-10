@@ -366,11 +366,15 @@ The more the Rsquare value the better is the model perfprmance.-----need to add 
 
 ### R square with depth 11
 ![image](https://user-images.githubusercontent.com/105535250/201196860-a80c6b3f-cef7-45e1-8f75-0adc0b4ce9ab.png)
+The result explains that R^2 train: 0.800, test: 0.773 : approximately 0.80% for the training data and 0.78% of the testing data observed variation can be explained by the model's inputs. Which is actually the best result we have got with our dataset.
 
 ### R square with depth 10
 ![image](https://user-images.githubusercontent.com/105535250/201197047-07590a2d-2758-47e8-a51b-0ab93c9b68bb.png)
 
-So, if the R2 of a model is **R^2 train: 0.799, test: 0.772**, then approximately 0.80% for the training data and 0.78% of the testing data observed variation can be explained by the model's inputs. The more the Rsquare value the better is the model perfprmance.
+So, if the R2 of a model is **R^2 train: 0.799, test: 0.772**, then approximately 0.80% for the training data and 0.78% of the testing data observed variation can be explained by the model's inputs.
+
+### Comparison Between results from depth 11 and depth 10
+the results are almost same just the depth 10 is negligibly lower. 
 
 ## Loaded Linear Regression Model
 The second model we tested out data is Linear Regression model. We imported:
@@ -395,7 +399,11 @@ from sklearn.linear_model import LinearRegression
 
 ![image](https://user-images.githubusercontent.com/105535250/201199107-f7affea5-8ea6-438e-a3bc-82b971feef30.png)
 
+The r square result from linear regression model is: R^2 train: 0.757, test: 0.754 meaning almost 0.76% of the training and 0.75% of the testing data observed variation can be explained by the model's inputs.
+
 ## Comparison between two models
+
+After evaluating both models, we find Decission Tree Regressor model better fit for our dataset as its r square value is higher then in the Linear Regression Model.
 
 
 
