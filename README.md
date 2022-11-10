@@ -33,7 +33,14 @@ Python is a computer programming language often used to build websites and softw
 * ### Machine Learning Model
 ML models are the mathematical engines of Artificial Intelligence, expressions of algorithms that find patterns and make predictions faster than a human can.
 
-## Required Libraries:
+* ### Tableau
+Tableau Software is a tool that helps make Big Data small, and small data insightful and actionable. The main use of tableau software is to help people see and understand their data.
+
+* ### Google Slide
+Google Slides is an online presentation app that lets you create and format presentations and work with other people.
+
+## Requirements for Machine Learning Model:
+A Python library is a collection or package of various modules. It contains bundles of code that can be used repeatedly in different programs.
 
 ### Libraries for data processing 
 
@@ -67,7 +74,6 @@ from sklearn.tree import DecisionTreeRegressor
 
 ### Libraries for cross validation and model evaluation
 
-
 from sklearn.model_selection import train_test_split, cross_val_score
 
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
@@ -89,47 +95,21 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 
 ## Questions to Answer:
+
 1.	How does the age of the car, condition and fuel type affect the price of the car?
+
 2.	Will this affect the overall demand for a used car in place of a new car for consumers?
 
- Technologies, languages, tools, and algorithms 
-used throughout project 
-
-
-## Quick review of Steps to be taken:
-Data Cleaning:
- that includes getting rid of all undesired columns
- 
-Creating table in SQL
-
-Utilize Tableau 
-
-Machine Learning Model:
-this includes choosing **X** variable as a **collection of features** and **Y** as a target variable which will be **Price**
-
-Model for Regression
-
-Linear Regression
-Logistic Regression
-K&N Algorithm
-Decission Tree	
-etc
-## Group Details:
-
-We are team of four people. 
-
-Shahla and Samantha are in charge of gathering information about the results of the dataset and what we want to achieve. Ryiochi was in charge of cleaning up the csv and dataset. Matthew was initializing our databases.
-
-# SEGMENT 2 SQUARE ROLE
-
-## Work Flow
+# Work Flow
 
 * Data Collection
 * Preprocessing/ Cleaning data
+* Creating table in SQL
 * Machine Learning Model Selection
 * Split the data into Training and Testing 
 * Fitting Data to a Model
 * Evaluate the Model 
+* Utilize Tableau and Google Slide for Visualization and Presentation
 
 ## Data Collection
 We planned to work with pandas in jupyter notebook. For that we imported Panda Dependencies to create data frame. Data frames are more structured and tabular form and its more easier to process and analyze the data that way.
