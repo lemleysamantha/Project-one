@@ -44,6 +44,15 @@ Pandas is a fast, powerful, flexible and easy to use open source data analysis a
 * ### Machine Learning Model
 ML models are the mathematical engines of Artificial Intelligence, expressions of algorithms that find patterns and make predictions faster than a human can.
 
+There are two types of Machine Learning:
+
+* Supervised Machine Learning: It is an ML technique where models are trained on labeled data i.e output variable is provided in these types of problems. Here, the models find the mapping function to map input variables with the output variable or the labels.
+- Regression and Classification problems are a part of Supervised Machine Learning.
+
+* Unsupervised Machine Learning: It is the technique where models are not provided with the labeled data and they have to find the patterns and structure in the data to know about the data.
+- Clustering and Association algorithms are a part of Unsupervised ML.
+For our project we are using **Supervised Machine learning**.
+
 * ### Tableau
 Tableau Software is a tool that helps make Big Data small, and small data insightful and actionable. The main use of tableau software is to help people see and understand their data.
 
@@ -183,14 +192,15 @@ After visual interpretation, we realized that the lower 5% of the data has very 
 One hot encoding can be defined as the essential process of converting the categorical data variables to be provided to machine and deep learning algorithms which in turn improve predictions as well as classification accuracy of a model. We utized one hot encoding for converting our categorical features which are present in many of our columns like **fuel, manufacturer, model, condition, transmission, drive , etc**.
 
 ## Machine Learning Models Selection
-We selected to work on:
+We selected to work on two Models i-e Decision Tree Regressor and Linear Regression Model. They are discussed below.
 
 * ## Decision Tree Regressor
 Decision Tree is one of the most commonly used, practical approaches for supervised learning. It can be used to solve both Regression and Classification tasks with the latter being put more into practical application. It is used by the Train Using AutoML tool and classifies or regresses the data using true or false answers to certain questions. The resulting structure, when visualized, is in the form of a tree with different types of nodes—root, internal, and leaf.
 
 ![image](https://user-images.githubusercontent.com/105535250/201030320-ce757d60-9499-4c49-82fc-737b211c345f.png)
 
-### Advantages
+### Advantages of Decission Tree Regressor
+
 There are many advantages of this model. some of them are:
 
 1- Compared to other algorithms decision trees requires less effort for data preparation during pre-processing.
@@ -203,7 +213,7 @@ There are many advantages of this model. some of them are:
 
 5- A Decision tree model is very intuitive and easy to explain to technical teams as well as stakeholders and can be used for both classification and regression problems.
 
-### Disadvantages
+### Disadvantages of Decission Tree Regressor
 
 1- A small change in the data can cause a large change in the structure of the decision tree causing instability.
 
@@ -216,12 +226,27 @@ There are many advantages of this model. some of them are:
 5- It can’t be used in big data: If the size of data is too big, then one single tree may grow a lot of nodes which might result in complexity and leads to overfitting.
 
 * ## Linear Regression Model
+Linear Regression may be one of the most commonly used models in the real world. It is a linear approach to modeling the relationship between a scalar response (dependent variable) and one or more explanatory variables (independent variables). Linear regression is used in everything from biological, behavioral, environmental and social sciences to business.
 
+![image](https://user-images.githubusercontent.com/105535250/201041695-9db95289-3668-4514-8bee-69d5ad936108.png)
 
+### Advantages of Linear Regression
 
+1. Linear Regression performs well when the dataset is linearly separable. We can use it to find the nature of the relationship among the variables.
 
+2. Linear Regression is easier to implement, interpret and very efficient to train. 
 
+3. Linear Regression is prone to over-fitting but it can be easily avoided using some dimensionality reduction techniques, regularization (L1 and L2) techniques and cross-validation.
 
+### Disadvantages of Linear Regression
+
+1. Main limitation of Linear Regression is the assumption of linearity between the dependent variable and the independent variables. In the real world, the data is rarely linearly separable. It assumes that there is a straight-line relationship between the dependent and independent variables which is incorrect many times.
+
+2. Prone to noise and overfitting: If the number of observations are lesser than the number of features, Linear Regression should not be used, otherwise it may lead to overfit because is starts considering noise in this scenario while building the model.
+
+3. Prone to outliers: Linear regression is very sensitive to outliers (anomalies). So, outliers should be analyzed and removed before applying Linear Regression to the dataset.
+
+4. Prone to multicollinearity: Before applying Linear regression, multicollinearity should be removed (using dimensionality reduction techniques) because it assumes that there is no relationship among independent variables.
 
 ## Split the Data and Target
 We then fed the data in the Machine Learning Model and using the features of the dataset, we  split the processed data into training and testing data. We trained our machine learning algorithm with training data then we tested or evaluated our machine learning model with the test data.
