@@ -362,18 +362,12 @@ Based on the results from GridSearchCV our best bet is to choose the max depth 1
 
 After a model has been processed by using the training set, we test the model by making predictions against the test set. Because the data in the testing set already contains known values for the attribute that we want to predict, it is easy to determine whether the model's guesses are correct.
 
-![image](https://user-images.githubusercontent.com/105535250/201189328-d9cb9ebe-52e8-4ca9-8f49-1241f697e48d.png)
+![image](https://user-images.githubusercontent.com/105535250/201241510-b0e81a54-cb89-4a91-bb24-0ffcb6ac2f24.png)
 
 ## Prediction on Training Data depth 15
 We similarly then predicted on training data.
 
-![image](https://user-images.githubusercontent.com/105535250/201189544-1757a4ff-ec2e-4629-b9a3-211dcd840dfa.png)
-
-## Prediction on Testing Data depth 10
-We followed the same steps to predict on testing data with depth 10.
-
-![image](https://user-images.githubusercontent.com/105535250/201190000-7d8755b7-2c58-4e3c-82e0-29a5a6e42ffa.png)
-
+![image](https://user-images.githubusercontent.com/105535250/201242211-e488f348-a01a-4a38-a24a-7d25acb0dcb2.png)
 
 ## Decission Tree Regressor Model Evaluation 
 ## R square Method
@@ -384,9 +378,9 @@ R-squared values range from 0 to 1 and are commonly stated as percentages from 0
 The more the Rsquare value the better is the model perfprmance.-----need to add more explaination
 
 ### R square with depth 15
-![image](https://user-images.githubusercontent.com/105535250/201196860-a80c6b3f-cef7-45e1-8f75-0adc0b4ce9ab.png)
+![image](https://user-images.githubusercontent.com/105535250/201242731-1a037328-6669-4cd1-94d9-43de1869fd75.png)
 
-The result explains that R^2 train: 0.800, test: 0.773 : approximately 0.80% for the training data and 0.78% of the testing data observed variation can be explained by the model's inputs. Which is actually the best result we have got with our dataset.
+The result explains that R^2 train: 0.882, test: 0.827 : approximately 0.88% for the training data and 0.83% of the testing data observed variation can be explained by the model's inputs. Which is actually the best result we have got with our dataset.
 
 ## Loaded Linear Regression Model
 The second model we tested out data is Linear Regression model. We imported:
