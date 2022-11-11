@@ -264,7 +264,7 @@ We were able to analyze the data by using the boxplots to visualize the outliers
 * ### One hot encoding
 Although, the decision tree algorithm does not require any transformation of the features because decision trees do not take multiple weighted combinations into account simultaneously, but for Linear Regression Model we need to transform our categorical feature. For that we are using One hot coding.
 
-One hot encoding can be defined as the essential process of converting the categorical data variables to be provided to machine and deep learning algorithms which in turn improve predictions as well as classification accuracy of a model. We utized one hot encoding for converting our categorical features which are present in many of our columns like **fuel, manufacturer, model, condition, transmission, drive , etc**.
+One hot encoding can be defined as the essential process of converting the categorical data variables to be provided to machine and deep learning algorithms which in turn improve predictions as well as classification accuracy of a model. We utized one hot encoding for converting our categorical features which are present in many of our columns like **fuel, manufacturer, model, condition, transmission, drive , etc**
 
 ## Machine Learning Models Selection
 We selected to work on two Models i-e Decision Tree Regressor and Linear Regression Model. They are discussed below.
