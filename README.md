@@ -27,7 +27,7 @@ Even though the car industry is growing at a fast rate, the shortage is impeding
 
 ## II. Objective
 Based on the current situation in the automotive industry, we have decided on predicting the prices of used cars for our project using the set of variables in the data set. Using Scikit learn to create following 2 different Machine Learning techniques:
-* DecissionTress Regressor
+* DecisionTree Regressor
 * Linear Regression Model
 
 Though it is a global issue, we will limit our studies and findings for US market only.
@@ -38,7 +38,7 @@ This dataset collected in Kaggle is mainly from craiglist.org (used item selling
 
 ## IV. Dataset
 * The original dataset contains 426,880 rows with 26 columns.
-* Based on relevance of each column to our analysis and the number of available, i.e., not NaN, values in the column, decided to focus on the fullowing columns:
+* Based on relevance of each column to our analysis and the number of available, i.e., not NaN, values in the column, decided to focus on the following columns:
 Price, year, manufacturer, model, condition, cylinders, fuel, odometer, title status, transmission, drive, and type
 * Any rows that include NaN data have been removed from the dataset, which then contains 103577 rows with 12 columns.
 		i)	Id, price, year, and odometer are numerical.
@@ -48,7 +48,7 @@ Price, year, manufacturer, model, condition, cylinders, fuel, odometer, title st
 
 ![image](https://user-images.githubusercontent.com/105535250/199819404-a0f16653-e9dd-437e-97a8-251c9d1c3d5b.png)
 
-Our plan is to make Price as our target variable and rest ww will pass as features. Also we will be dropping off null values and some columns that are not needed as they dont impact the price of the used cars much.
+Our plan is to make Price as our target variable and the rest will pass as features. Also, we will be dropping off null values and some columns that are not needed as they dont impact the price of the used cars much.
 
 ## V. Technologies, languages, tools, and algorithms used throughout project 
 * ### Postgres pgAdmin (SQL)
@@ -65,7 +65,7 @@ Our plan is to make Price as our target variable and rest ww will pass as featur
 
 	There are two types of Machine Learning:
 
-	* Supervised Machine Learning: It is an ML technique where models are trained on labeled data i.e output variable is provided in these types of problems. 	Here, the models find the mapping function to map input variables with the output variable or the labels.
+	* Supervised Machine Learning: It is an ML technique where models are trained on labeled data i.e., output variable is provided in these types of problems. 	Here, the models find the mapping function to map input variables with the output variable or the labels.
 	- Regression and Classification problems are a part of Supervised Machine Learning.
 
 	* Unsupervised Machine Learning: It is the technique where models are not provided with the labeled data and they have to find the patterns and structure in the data to know about the data.
@@ -96,7 +96,7 @@ Our plan is to make Price as our target variable and rest ww will pass as featur
 - from sklearn.preprocessing import PolynomialFeatures
 - from sklearn.preprocessing import StandardScaler,OneHotEncoder
 
-#### Liblaries for models
+#### Libraries for models
 - from sklearn.linear_model import LinearRegression, Ridge
 - from sklearn.tree import DecisionTreeRegressor
 
@@ -138,7 +138,7 @@ Our plan is to make Price as our target variable and rest ww will pass as featur
 * Utilize Tableau and Google Slide for Visualization and Presentation
 
 ## Data Collection
-We planned to work with pandas in jupyter notebook. For that we imported Panda Dependencies to create data frame. Data frames are more structured and tabular form and its more easier to process and analyze the data that way.
+We planned to work with pandas in jupyter notebook. For that we imported Panda Dependencies to create data frame. Data frames are more structured and tabular form and it is easier to process and analyze the data that way.
 
 ## Assumptions set for Preprocessing
 
@@ -149,7 +149,7 @@ We planned to work with pandas in jupyter notebook. For that we imported Panda D
 * Odometer of the car may affect the upper limit of the used car price.
 
 ## Preprocessing/ Cleaning Data
-We can not feed the raw data in the Machine learning model for that we worked on cleaning the data. 
+We cannot feed the raw data in the Machine learning model for that we worked on cleaning the data. 
 
 * ### Dropped Unwanted Columns
 ![image](https://user-images.githubusercontent.com/105535250/199826222-7a26b31b-4c6f-410b-9473-4ca8bb55ca83.png)
@@ -172,13 +172,13 @@ Odometer values larger than 200,000 (miles) were removed.
 
 
 * ### Recategorize the State with Feature Engineering and renamed column as Area
-To reduce the number of unique values in the state column we recategorized the state and arranged them into four region named as **west, midwest, northeast, and south** given new column name as Area
+To reduce the number of unique values in the state column we recategorized the state and arranged them into four regions named as **west, midwest, northeast, and south** given new column name as Area
 
 ![image](https://user-images.githubusercontent.com/105535250/201024725-5361b85f-e3e8-49b3-a1eb-2872a097cac8.png)
 
 
 * ### Worked on visualization to find Price Outliers
-An **Outlier** can cause serious problems in statistical analyses. Outliers are values within a dataset that vary greatly from the others—they’re either much larger, or significantly smaller. Outliers may indicate variabilities in a measurement, experimental errors, or a novelty. Therefore its important to remove outliers.
+An **Outlier** can cause serious problems in statistical analyses. Outliers are values within a dataset that vary greatly from the others—they’re either much larger, or significantly smaller. Outliers may indicate variabilities in a measurement, experimental errors, or a novelty. Therefore, it is important to remove outliers.
 
 ![image](https://user-images.githubusercontent.com/105535250/201022939-d19184a9-53ce-4a0a-a424-1aadb85b674c.png)
 
@@ -187,13 +187,13 @@ We plotted some visuals to find price outliers for that we compared Year feature
 ![image](https://user-images.githubusercontent.com/105535250/201024297-268a0e7b-e211-421e-baae-17ab657824ca.png)
 
 * ### Removing Outliers
-After visual interpretation, we realized that the lower 5% of the data has very low number of values and the upper 5% of the data was mainly very distinctive values. Therefore we decide to drop that portion of the data and set the range for price less then or equal to 100,000.
+After visual interpretation, we realized that some data were mainly very distinctive value and decided to roughly remove them from the dataset.
 
 ![image](https://user-images.githubusercontent.com/105535250/201024542-736df38f-625c-43c2-9a8b-b7b352525008.png)
 
 ## Database - Worked in pgAdmin
 ### Main Table
-During the exploratory phase, we decided to select the following in the main tabel as they appears relevant to the used car price
+During the exploratory phase, we decided to select the following in the main table as they appear relevant to the used car price.
 	- a. id 		- h. fuel
 	
 	- b. price		- i. odometer		
@@ -234,28 +234,28 @@ Two tables are separately generated in PostgreSQL by creating connection to the 
 
 ## Data Exploration
 
-We explored the data by creating box plots and subplots. We were able to better visualize the large amount of data that was given in the excel spreadsheet file. We found that the outliers did not make much sense. For examnple, Oregon had an average price of car at 1.6 million and California had an average price 139,000. Based on what we know about markets, California's average price should be way higher than Oregon's. We have found that our data also is not in one currency which could have skewed the numbers.
+We explored the data by creating box plots and subplots. We were able to better visualize the large amount of data that was given in the excel spreadsheet file. We found that the outliers did not make much sense. For example, Oregon had an average price of car at 1.6 million and California had an average price 139,000. Based on what we know about markets, California's average price should be way higher than Oregon's. We have found that our data also is not in one currency which could have skewed the numbers.
 
 ## Analysis
 
-We were able to analyze the data by using the boxplots to visualize the outliers. The actual prices and the predicted prices were shown through the scatterplot.We were using tableau to get a better understanding of the prices and regions.
+We were able to analyze the data by using the boxplots to visualize the outliers. The actual prices and the predicted prices were shown through the scatterplot. We were using tableau to get a better understanding of the prices and regions.
 
 ## Getting Ready for Machine Learning Models
 
 * ### One hot encoding
 Although, the decision tree algorithm does not require any transformation of the features because decision trees do not take multiple weighted combinations into account simultaneously, but for Linear Regression Model we need to transform our categorical feature. For that we are using One hot coding.
 
-One hot encoding can be defined as the essential process of converting the categorical data variables to be provided to machine and deep learning algorithms which in turn improve predictions as well as classification accuracy of a model. We utized one hot encoding for converting our categorical features which are present in many of our columns like **fuel, manufacturer, model, condition, transmission, drive , etc**
+One hot encoding can be defined as the essential process of converting the categorical data variables to be provided to machine and deep learning algorithms which in turn improve predictions as well as classification accuracy of a model. We utilized one hot encoding for converting our categorical features which are present in many of our columns like **fuel, manufacturer, model, condition, transmission, drive, etc**
 
 ## Machine Learning Models Selection
-We selected to work on two Models i-e Decision Tree Regressor and Linear Regression Model. They are discussed below.
+We selected to work on two Models i.e., Decision Tree Regressor and Linear Regression Model. They are discussed below.
 
 * ## Decision Tree Regressor
 Decision Tree is one of the most commonly used, practical approaches for supervised learning. It can be used to solve both Regression and Classification tasks with the latter being put more into practical application. It is used by the Train Using AutoML tool and classifies or regresses the data using true or false answers to certain questions. The resulting structure, when visualized, is in the form of a tree with different types of nodes—root, internal, and leaf.
 
 ![image](https://user-images.githubusercontent.com/105535250/201030320-ce757d60-9499-4c49-82fc-737b211c345f.png)
 
-### Advantages of Decission Tree Regressor:
+### Advantages of DecisionTree Regressor:
 
 There are many advantages of this model. some of them are:
 
@@ -269,7 +269,7 @@ There are many advantages of this model. some of them are:
 
 5- A Decision tree model is very intuitive and easy to explain to technical teams as well as stakeholders and can be used for both classification and regression problems.
 
-### Disadvantages of Decission Tree Regressor
+### Disadvantages of DecisionTree Regressor
 
 1- A small change in the data can cause a large change in the structure of the decision tree causing instability.
 
@@ -298,7 +298,7 @@ Linear Regression may be one of the most commonly used models in the real world.
 
 1. Main limitation of Linear Regression is the assumption of linearity between the dependent variable and the independent variables. In the real world, the data is rarely linearly separable. It assumes that there is a straight-line relationship between the dependent and independent variables which is incorrect many times.
 
-2. Prone to noise and overfitting: If the number of observations are lesser than the number of features, Linear Regression should not be used, otherwise it may lead to overfit because is starts considering noise in this scenario while building the model.
+2. Prone to noise and overfitting: If the number of observations is less than the number of features, Linear Regression should not be used, otherwise it may lead to overfit because is starts considering noise in this scenario while building the model.
 
 3. Prone to outliers: Linear regression is very sensitive to outliers (anomalies). So, outliers should be analyzed and removed before applying Linear Regression to the dataset.
 
@@ -310,17 +310,17 @@ Linear Regression may be one of the most commonly used models in the real world.
 Separating data into training and testing sets is an important part of evaluating machine learning models. Typically, when we separate a data set into a training set and testing set, most of the data is used for training, and a smaller portion of the data is used for testing. By using similar data for training and testing, we can minimize the effects of data discrepancies and better understand the characteristics of the model. 
 
 ### Process of splitting
-We used sklearn library to imoprt: **sklearn.model_selection import train_test_split**. Train_test_split is a function in Sklearn model selection for splitting data arrays into two subsets: for training data and for testing data. With this function, you don't need to divide the dataset manually. By default, Sklearn train_test_split will make 25:75 random partitions for the two subsets. But with our dataset we found better results when we divide datasets to 20:80 ratio. We then fed the data in the Machine Learning Model and using the features of the dataset, we  split the processed data into training and testing data. We trained our machine learning algorithm with training data then we tested or evaluated our machine learning model with the test data.first we created two variable **X** and **Y** to split data and the target. We stored **Price** in **Y** which is our target variable and pass rest of the features in varaible **X**. 
+We used sklearn library to import: **sklearn.model_selection import train_test_split**. Train_test_split is a function in Sklearn model selection for splitting data arrays into two subsets: for training data and for testing data. With this function, you don't need to divide the dataset manually. By default, Sklearn train_test_split will make 25:75 random partitions for the two subsets. But with our dataset we found better results when we divide datasets to 20:80 ratio. We then fed the data in the Machine Learning Model and using the features of the dataset, we  split the processed data into training and testing data. We trained our machine learning algorithm with training data then we tested or evaluated our machine learning model with the test data. First we created two variable **X** and **Y** to split data and the target. We stored **Price** in **Y** which is our target variable and pass rest of the features in variable **X**. 
 
 ## Creating Training and Testing dataset
 for this we created four variables:
 
 **X_train, X_test, Y_train, and y_test**
-As we seperated the target from the data above, we then put all the data to train the module in the **X_train** variable and all the testing data in the variable **X_test**. The price of all the values from **X_train** will be stored in **y_train** and the price of all the values from **X_test** will be stored in **y_test**. 
-We then utilized train-test-split function which we imported from sklearn library and pass our **X** and **Y** variable in it to finally split our data into traing and testing. 
+As we separated the target from the data above, we then put all the data to train the module in the **X_train** variable and all the testing data in the variable **X_test**. The price of all the values from **X_train** will be stored in **y_train** and the price of all the values from **X_test** will be stored in **y_test**. 
+We then utilized train-test-split function which we imported from sklearn library and pass our **X** and **Y** variable in it to finally split our data into training and testing. 
 
-## Loaded Decission Tree Regressor
-We first load DecissionTree Regressor to test our data. We imported the regressor:
+## Loaded DecisionTree Regressor
+We first load DecisionTree Regressor to test our data. We imported the regressor:
 
 from sklearn.tree import DecisionTreeRegressor 
 ![image](https://user-images.githubusercontent.com/105535250/201184674-f18b061a-f1c0-4f9b-9f5d-f97df5db559d.png)
@@ -339,7 +339,6 @@ It runs through all the different parameters that is fed into the parameter grid
 Based on the results from GridSearchCV our best bet is to choose the max depth 15.
 
 ## Prediction on Testing Data depth 15
-
 After a model has been processed by using the training set, we test the model by making predictions against the test set. Because the data in the testing set already contains known values for the attribute that we want to predict, it is easy to determine whether the model's guesses are correct.
 
 ![image](https://user-images.githubusercontent.com/105535250/201241510-b0e81a54-cb89-4a91-bb24-0ffcb6ac2f24.png)
@@ -355,12 +354,12 @@ R-squared (R2) is a statistical measure of fit that indicates how much variation
 
 R-squared values range from 0 to 1 and are commonly stated as percentages from 0% to 100%. An R-squared of 100% means that all movements of a dependent variable are completely explained by movements in the independent variable(s).
 
-The more the Rsquare value the better is the model perfprmance.-----need to add more explaination
+The more the R-squared value, the better is the model performance.
 
-### R square with depth 15
+### R-squared with depth 15
 ![image](https://user-images.githubusercontent.com/105535250/201242731-1a037328-6669-4cd1-94d9-43de1869fd75.png)
 
-The result explains that R^2 train: 0.882, test: 0.827 : approximately 0.88% for the training data and 0.83% of the testing data observed variation can be explained by the model's inputs. Which is actually the best result we have got with our dataset.
+The result explains that R^2 train: 0.882, test: 0.827: approximately 88% for the training data and 83% of the testing data observed variation can be explained by the model's inputs. Which is actually the best result we have got with our dataset.
 
 ## Loaded Linear Regression Model
 The second model we tested out data is Linear Regression model. We imported:
@@ -381,22 +380,17 @@ from sklearn.linear_model import LinearRegression
 ![image](https://user-images.githubusercontent.com/105535250/201198490-d355a4d4-5bb7-4ee3-a7b9-bb99d9751de5.png)
 
 
-## Linear Regression Model Evaluation with R square Method
+## Linear Regression Model Evaluation with R-squared Method
 
 ![image](https://user-images.githubusercontent.com/105535250/201199107-f7affea5-8ea6-438e-a3bc-82b971feef30.png)
 
-The r square result from linear regression model is: R^2 train: 0.757, test: 0.754 meaning almost 0.76% of the training and 0.75% of the testing data observed variation can be explained by the model's inputs.
+The r-squared result from linear regression model is R^2 train: 0.757, test: 0.754 meaning almost 76% of the training and 75% of the testing data observed variation can be explained by the model's inputs.
 
 ## Comparison between two models
 
-After evaluating both models, we find Decission Tree Regressor model better fit for our dataset as its r square value is higher then in the Linear Regression Model.
+After evaluating both models, we find DecisionTree Regressor model better fit for our dataset as its r square value is higher than in the Linear Regression Model.
 
 ![image](https://user-images.githubusercontent.com/105535250/201243188-194d155c-7e5e-466c-ae31-9b3d2ebd0c73.png)
 
 ## Tableau and Google Slide
 We tried to put everything togather and present it as a presentation utilizing Tableau for our visuals to help the viewer understand it as easy possible. 
-
-
-
-
-
