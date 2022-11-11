@@ -21,6 +21,8 @@ Our plan is to make Price as our target variable and rest ww will pass as featur
 
 https://public.tableau.com/authoring/Trial_16675235483750/Sheet1#1
 
+#Dashboard
+https://public.tableau.com/app/profile/matt.leiser/viz/CarPricesDashboard_16680540059890/Dashboard1?publish=yes
 ## Required Libraries:
 
 ### Libraries for data processing 
