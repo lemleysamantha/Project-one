@@ -356,15 +356,15 @@ It runs through all the different parameters that is fed into the parameter grid
 
 ![image](https://user-images.githubusercontent.com/105535250/201186727-5fc6491d-1426-446e-b309-2bb69eba8824.png)
 
-Based on the results from GridSearchCV our best bet is to choose the max depth 11, though we tested our data with depth 10 aswell.
+Based on the results from GridSearchCV our best bet is to choose the max depth 15.
 
-## Prediction on Testing Data depth 11
+## Prediction on Testing Data depth 15
 
 After a model has been processed by using the training set, we test the model by making predictions against the test set. Because the data in the testing set already contains known values for the attribute that we want to predict, it is easy to determine whether the model's guesses are correct.
 
 ![image](https://user-images.githubusercontent.com/105535250/201189328-d9cb9ebe-52e8-4ca9-8f49-1241f697e48d.png)
 
-## Prediction on Training Data depth 11
+## Prediction on Training Data depth 15
 We similarly then predicted on training data.
 
 ![image](https://user-images.githubusercontent.com/105535250/201189544-1757a4ff-ec2e-4629-b9a3-211dcd840dfa.png)
@@ -374,29 +374,19 @@ We followed the same steps to predict on testing data with depth 10.
 
 ![image](https://user-images.githubusercontent.com/105535250/201190000-7d8755b7-2c58-4e3c-82e0-29a5a6e42ffa.png)
 
-## Prediction on Training Data depth 10
-We followed the same steps to predict on training data with depth 10.
 
-![image](https://user-images.githubusercontent.com/105535250/201190157-94accaf1-6cf7-4a40-9842-d7d6c53e1763.png)
-
-## Decission Tree Regressor Model Evaluation with R square Method
+## Decission Tree Regressor Model Evaluation 
+## R square Method
 R-squared (R2) is a statistical measure of fit that indicates how much variation of a dependent variable is explained by the independent variable(s) in a regression model.  R-squared explains to what extent the variance of one variable explains the variance of the second variable. 
 
 R-squared values range from 0 to 1 and are commonly stated as percentages from 0% to 100%. An R-squared of 100% means that all movements of a dependent variable are completely explained by movements in the independent variable(s).
 
 The more the Rsquare value the better is the model perfprmance.-----need to add more explaination
 
-### R square with depth 11
+### R square with depth 15
 ![image](https://user-images.githubusercontent.com/105535250/201196860-a80c6b3f-cef7-45e1-8f75-0adc0b4ce9ab.png)
+
 The result explains that R^2 train: 0.800, test: 0.773 : approximately 0.80% for the training data and 0.78% of the testing data observed variation can be explained by the model's inputs. Which is actually the best result we have got with our dataset.
-
-### R square with depth 10
-![image](https://user-images.githubusercontent.com/105535250/201197047-07590a2d-2758-47e8-a51b-0ab93c9b68bb.png)
-
-So, if the R2 of a model is **R^2 train: 0.799, test: 0.772**, then approximately 0.80% for the training data and 0.78% of the testing data observed variation can be explained by the model's inputs.
-
-### Comparison Between results from depth 11 and depth 10
-the results are almost same just the depth 10 is negligibly lower. 
 
 ## Loaded Linear Regression Model
 The second model we tested out data is Linear Regression model. We imported:
