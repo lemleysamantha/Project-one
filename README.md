@@ -52,18 +52,18 @@ Our plan is to make Price as our target variable and rest ww will pass as featur
 
 ## V. Technologies, languages, tools, and algorithms used throughout project 
 * ### Postgres pgAdmin (SQL)
-PostgreSQL, also known as Postgres, is an open-source relational database with a strong reputation for its reliability, flexibility and support of open technical standards. PostgreSQL supports both non-relational and relational data types. pgAdmin is the community client for using PostgreSQL. It is usually installed along with PostgreSQL. While psql is a simple command-line tool, pgAdmin is a graphical user interface that provides pretty much the same functionality.
+	PostgreSQL, also known as Postgres, is an open-source relational database with a strong reputation for its reliability, flexibility and support of open technical standards. PostgreSQL supports both non-relational and relational data types. pgAdmin is the community client for using PostgreSQL. It is usually installed along with PostgreSQL. While psql is a simple command-line tool, pgAdmin is a graphical user interface that provides pretty much the same functionality.
 
 * ### Python
-Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems.
+	Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems.
 
 * ### Pandas
-Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,built on top of the Python programming language.
+	Pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,built on top of the Python programming language.
 
 * ### Machine Learning Model
-ML models are the mathematical engines of Artificial Intelligence, expressions of algorithms that find patterns and make predictions faster than a human can.
+	ML models are the mathematical engines of Artificial Intelligence, expressions of algorithms that find patterns and make predictions faster than a human can.
 
-There are two types of Machine Learning:
+	There are two types of Machine Learning:
 
 * Supervised Machine Learning: It is an ML technique where models are trained on labeled data i.e output variable is provided in these types of problems. Here, the models find the mapping function to map input variables with the output variable or the labels.
 - Regression and Classification problems are a part of Supervised Machine Learning.
@@ -73,13 +73,13 @@ There are two types of Machine Learning:
 For our project we are using **Supervised Machine learning**.
 
 * ### Tableau
-Tableau Software is a tool that helps make Big Data small, and small data insightful and actionable. The main use of tableau software is to help people see and understand their data.
+	Tableau Software is a tool that helps make Big Data small, and small data insightful and actionable. The main use of tableau software is to help people see and understand their data.
 
 * ### Google Slide
-Google Slides is an online presentation app that lets you create and format presentations and work with other people.
+	Google Slides is an online presentation app that lets you create and format presentations and work with other people.
 
 * ### Requirements for Machine Learning Model
-A Python library is a collection or package of various modules. It contains bundles of code that can be used repeatedly in different programs.
+	A Python library is a collection or package of various modules. It contains bundles of code that can be used repeatedly in different programs.
 
 #### Libraries for data processing 
 - import numpy as np
