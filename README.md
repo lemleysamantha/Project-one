@@ -11,14 +11,17 @@ https://public.tableau.com/authoring/Trial_16675235483750/Sheet1#1
 - Presentation slide: https://docs.google.com/presentation/d/118tpe3yXka8YBHNV0Z-DFEeLZ-Cx0AEE3ojUGSE9N9M/edit?usp=sharing
 
 
-### INDEX
-#### I.		Background
-#### II.		Object
-#### III.		Data Sources
-#### IV.	Dataset
-#### V.		Technologies, Languages, Tools, and Algorithms Used throughout Project
-#### VI.	Questions to Answer
-#### VII.	Workflow
+## --------------- I N D E X ---------------
+### I.		Background
+### II.		Object
+### III.		Data Sources
+### IV.	Dataset
+### V.		Technologies, Languages, Tools, and Algorithms Used throughout Project
+### VI.	Questions to Answer
+### VII.	Workflow
+### VIII.	Database
+
+
 
 ## I. Background
 
@@ -81,37 +84,37 @@ Our plan is to make Price as our target variable and rest ww will pass as featur
 * ### Requirements for Machine Learning Model
 	A Python library is a collection or package of various modules. It contains bundles of code that can be used repeatedly in different programs.
 
-#### Libraries for data processing 
-- import numpy as np
-- import pandas as pd
+	#### Libraries for data processing 
+	- import numpy as np
+	- import pandas as pd
 
-#### Libraries for visualization
-- import matplotlib.pyplot as plt
-- import plotly.express as px
-- import seaborn as sns
+	#### Libraries for visualization
+	- import matplotlib.pyplot as plt
+	- import plotly.express as px
+	- import seaborn as sns
 
-#### Libraries for preprocessing
-- from sklearn import preprocessing
-- from sklearn.preprocessing import StandardScaler
-- from sklearn.preprocessing import PolynomialFeatures
-- from sklearn.preprocessing import StandardScaler,OneHotEncoder
+	#### Libraries for preprocessing
+	- from sklearn import preprocessing
+	- from sklearn.preprocessing import StandardScaler
+	- from sklearn.preprocessing import PolynomialFeatures
+	- from sklearn.preprocessing import StandardScaler,OneHotEncoder
 
-#### Liblaries for models
-- from sklearn.linear_model import LinearRegression, Ridge
-- from sklearn.tree import DecisionTreeRegressor
+	#### Liblaries for models
+	- from sklearn.linear_model import LinearRegression, Ridge
+	- from sklearn.tree import DecisionTreeRegressor
 
-#### Libraries for cross validation and model evaluation
-- from sklearn.model_selection import train_test_split, cross_val_score
-- from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
-- from sklearn.pipeline import Pipeline
-- from sklearn.model_selection import GridSearchCV, cross_val_score
+	#### Libraries for cross validation and model evaluation
+	- from sklearn.model_selection import train_test_split, cross_val_score
+	- from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+	- from sklearn.pipeline import Pipeline
+	- from sklearn.model_selection import GridSearchCV, cross_val_score
 
-#### Libraries for SQL
-- import psycopg2
-- import sqlalchemy
-- from sqlalchemy.ext.automap import automap_base
-- from sqlalchemy.orm import Session
-- from sqlalchemy import create_engine, func
+	#### Libraries for SQL
+	- import psycopg2
+	- import sqlalchemy
+	- from sqlalchemy.ext.automap import automap_base
+	- from sqlalchemy.orm import Session
+	- from sqlalchemy import create_engine, func
 
 ## VI. Questions to Answer
 
@@ -165,17 +168,13 @@ For **cylinders** we changed the data type to float64 and remover the object cyl
 Considering the age of the cars can be an important variable, we tried to improve data by dropping the data in which car price is more than 20 years old setting Year Entries for 2000 or older were removed
 ![image](https://user-images.githubusercontent.com/105535250/201019725-cbfd5a53-9d7b-4aac-a23d-edbcbdfb0fdb.png)
 
-
 * ### Odometer values 
 Odometer values larger than 200,000 (miles) were removed.
 ![image](https://user-images.githubusercontent.com/105535250/201019426-821f0822-610b-4222-bf7e-28a9a29da39c.png)
 
-
 * ### Recategorize the State with Feature Engineering and renamed column as Area
 To reduce the number of unique values in the state column we recategorized the state and arranged them into four region named as **west, midwest, northeast, and south** given new column name as Area
-
 ![image](https://user-images.githubusercontent.com/105535250/201024725-5361b85f-e3e8-49b3-a1eb-2872a097cac8.png)
-
 
 * ### Worked on visualization to find Price Outliers
 An **Outlier** can cause serious problems in statistical analyses. Outliers are values within a dataset that vary greatly from the others—they’re either much larger, or significantly smaller. Outliers may indicate variabilities in a measurement, experimental errors, or a novelty. Therefore its important to remove outliers.
@@ -187,7 +186,7 @@ We plotted some visuals to find price outliers for that we compared Year feature
 ![image](https://user-images.githubusercontent.com/105535250/201024297-268a0e7b-e211-421e-baae-17ab657824ca.png)
 
 * ### Removing Outliers
-After visual interpretation, we realized that the lower 5% of the data has very low number of values and the upper 5% of the data was mainly very distinctive values. Therefore we decide to drop that portion of the data and set the range for price less then or equal to 100,000.
+After visual interpretation, we realized that some data were mainly very distinctive values and decided to remove them from the dataset.
 
 ![image](https://user-images.githubusercontent.com/105535250/201024542-736df38f-625c-43c2-9a8b-b7b352525008.png)
 
