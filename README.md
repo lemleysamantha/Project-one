@@ -4,12 +4,10 @@
 ## Link to Tableau
 https://public.tableau.com/authoring/Trial_16675235483750/Sheet1#1
 
-#Dashboard https://public.tableau.com/app/profile/matt.leiser/viz/CarPricesDashboard_16680540059890/Dashboard1?publish=yes
-
 ## Deliverables of the project
-- Code necessary for data exploration and analysis: *** FILE NAME ***
-- Python code for data preprocessing and machine learning: *** FILE NAME ***
-- Dashboard: *** LINK TO DASHBOARD ***
+- Code necessary for data exploration and analysis: **Data_preprocessing.ipynb** 
+- Python code for data preprocessing and machine learning: **Final_RegModel.ipynb**
+- Dashboard: https://public.tableau.com/app/profile/matt.leiser/viz/CarPricesDashboard_16680540059890/Dashboard1?publish=yes
 - Presentation slide: *** LINK TO GOOGLE SLIDE ***
 
 
