@@ -353,8 +353,7 @@ It runs through all the different parameters that is fed into the parameter grid
 
 * “best parameters” results are limited
 * process is time-consuming
-
-![image](https://user-images.githubusercontent.com/105535250/201186727-5fc6491d-1426-446e-b309-2bb69eba8824.png)
+![image](https://user-images.githubusercontent.com/105535250/201244280-f44f7112-c7cf-4cc0-864d-8f3030737d92.png)
 
 Based on the results from GridSearchCV our best bet is to choose the max depth 15.
 
