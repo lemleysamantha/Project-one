@@ -65,12 +65,12 @@ Our plan is to make Price as our target variable and rest ww will pass as featur
 
 	There are two types of Machine Learning:
 
-* Supervised Machine Learning: It is an ML technique where models are trained on labeled data i.e output variable is provided in these types of problems. Here, the models find the mapping function to map input variables with the output variable or the labels.
-- Regression and Classification problems are a part of Supervised Machine Learning.
+	* Supervised Machine Learning: It is an ML technique where models are trained on labeled data i.e output variable is provided in these types of problems. 	Here, the models find the mapping function to map input variables with the output variable or the labels.
+	- Regression and Classification problems are a part of Supervised Machine Learning.
 
-* Unsupervised Machine Learning: It is the technique where models are not provided with the labeled data and they have to find the patterns and structure in the data to know about the data.
-- Clustering and Association algorithms are a part of Unsupervised ML.
-For our project we are using **Supervised Machine learning**.
+	* Unsupervised Machine Learning: It is the technique where models are not provided with the labeled data and they have to find the patterns and structure in the data to know about the data.
+	- Clustering and Association algorithms are a part of Unsupervised ML.
+	For our project we are using **Supervised Machine learning**.
 
 * ### Tableau
 	Tableau Software is a tool that helps make Big Data small, and small data insightful and actionable. The main use of tableau software is to help people see and understand their data.
