@@ -166,9 +166,6 @@ We planned to work with pandas in jupyter notebook. For that we imported Panda D
 * Clean title, gas, and automatic transmission looks like a standard. 
 * Odometer of the car may affect the upper limit of the used car price.
 
-
-	iV.	Outliers were removed as they were identified during the process.
-
 ## Preprocessing/ Cleaning Data
 We can not feed the raw data in the Machine learning model for that we worked on cleaning the data. 
 
