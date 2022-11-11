@@ -1,6 +1,11 @@
 # Project-one
 # Topic Selected:  Used Cars Price Prediction
 
+## Link to Tableau
+https://public.tableau.com/authoring/Trial_16675235483750/Sheet1#1
+
+#Dashboard https://public.tableau.com/app/profile/matt.leiser/viz/CarPricesDashboard_16680540059890/Dashboard1?publish=yes
+
 ## Background:
 
 Over the past few years, the automotive industry has faced a shortage in the Semiconductor Integrate Chips globally. The Semicoductor IC is a critical component for controlling several electronic devices in the vehicle. 
