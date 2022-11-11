@@ -5,8 +5,8 @@
 https://public.tableau.com/authoring/Trial_16675235483750/Sheet1#1
 
 ## Deliverables of the project
-- Code necessary for data exploration and analysis: **Data_preprocessing.ipynb** 
-- Python code for data preprocessing and machine learning: **Final_RegModel.ipynb**
+- Code necessary for data exploration and analysis: **DataProcessing.ipynb** 
+- Python code for data preprocessing and machine learning: **FinalRegModels.ipynb**
 - Dashboard: https://public.tableau.com/app/profile/matt.leiser/viz/CarPricesDashboard_16680540059890/Dashboard1?publish=yes
 - Presentation slide: https://docs.google.com/presentation/d/118tpe3yXka8YBHNV0Z-DFEeLZ-Cx0AEE3ojUGSE9N9M/edit?usp=sharing
 
