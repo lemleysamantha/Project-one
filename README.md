@@ -15,27 +15,28 @@ https://public.tableau.com/authoring/Trial_16675235483750/Sheet1#1
 #### I.		Background
 #### II.		Object
 #### III.		Data Sources
-#### IV.	Questions to Answer
+#### IV.	Dataset
 #### V.		Technologies, Languages, Tools, and Algorithms Used throughout Project
-#### VI.	Workflow of Project
+#### VI.	Questions to Answer
+#### VII.	Workflow
 
-## Background:
+## I. Background
 
 Over the past few years, the automotive industry has faced a shortage in the Semiconductor Integrate Chips globally. The Semicoductor IC is a critical component for controlling several electronic devices in the vehicle. 
 Even though the car industry is growing at a fast rate, the shortage is impeding the growth of new car production and sales. The new car sales industry is making up for the shortage by raising their APR and prices. Therefore, there is a trend of increasing demand of used cars which is making the prices of used cars higher as well.
 
-## Objective:
+## II. Objective
 Based on the current situation in the automotive industry, we have decided on predicting the prices of used cars for our project using the set of variables in the data set. Using Scikit learn to create following 2 different Machine Learning techniques:
 * DecissionTress Regressor
 * Linear Regression Model
 
 Though it is a global issue, we will limit our studies and findings for US market only.
 
-## Data Sources:
+## III. Data Sources
 https://www.kaggle.com/code/maciejautuch/car-price-prediction/data
 This dataset collected in Kaggle is mainly from craiglist.org (used item selling website) from all over US. These cars are from different manufacturers and of different years.
 
-## Dataset:
+## IV. Dataset
 * The original dataset contains 426,880 rows with 26 columns.
 * Based on relevance of each column to our analysis and the number of available, i.e., not NaN, values in the column, decided to focus on the fullowing columns:
 Price, year, manufacturer, model, condition, cylinders, fuel, odometer, title status, transmission, drive, and type
@@ -49,8 +50,8 @@ Price, year, manufacturer, model, condition, cylinders, fuel, odometer, title st
 
 Our plan is to make Price as our target variable and rest ww will pass as features. Also we will be dropping off null values and some columns that are not needed as they dont impact the price of the used cars much.
 
-# Technologies, languages, tools, and algorithms used throughout project 
-* ## Postgres pgAdmin (SQL)
+## V. Technologies, languages, tools, and algorithms used throughout project 
+* ### Postgres pgAdmin (SQL)
 PostgreSQL, also known as Postgres, is an open-source relational database with a strong reputation for its reliability, flexibility and support of open technical standards. PostgreSQL supports both non-relational and relational data types. pgAdmin is the community client for using PostgreSQL. It is usually installed along with PostgreSQL. While psql is a simple command-line tool, pgAdmin is a graphical user interface that provides pretty much the same functionality.
 
 * ### Python
@@ -77,68 +78,48 @@ Tableau Software is a tool that helps make Big Data small, and small data insigh
 * ### Google Slide
 Google Slides is an online presentation app that lets you create and format presentations and work with other people.
 
-## Requirements for Machine Learning Model:
+* ### Requirements for Machine Learning Model
 A Python library is a collection or package of various modules. It contains bundles of code that can be used repeatedly in different programs.
 
-### Libraries for data processing 
+#### Libraries for data processing 
+- import numpy as np
+- import pandas as pd
 
-import numpy as np
+#### Libraries for visualization
+- import matplotlib.pyplot as plt
+- import plotly.express as px
+- import seaborn as sns
 
-import pandas as pd
+#### Libraries for preprocessing
+- from sklearn import preprocessing
+- from sklearn.preprocessing import StandardScaler
+- from sklearn.preprocessing import PolynomialFeatures
+- from sklearn.preprocessing import StandardScaler,OneHotEncoder
 
-### Libraries for visualization
+#### Liblaries for models
+- from sklearn.linear_model import LinearRegression, Ridge
+- from sklearn.tree import DecisionTreeRegressor
 
-import matplotlib.pyplot as plt
+#### Libraries for cross validation and model evaluation
+- from sklearn.model_selection import train_test_split, cross_val_score
+- from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+- from sklearn.pipeline import Pipeline
+- from sklearn.model_selection import GridSearchCV, cross_val_score
 
-import plotly.express as px
+#### Libraries for SQL
+- import psycopg2
+- import sqlalchemy
+- from sqlalchemy.ext.automap import automap_base
+- from sqlalchemy.orm import Session
+- from sqlalchemy import create_engine, func
 
-import seaborn as sns
-
-### Libraries for preprocessing
-
-from sklearn import preprocessing
-
-from sklearn.preprocessing import StandardScaler
-
-from sklearn.preprocessing import PolynomialFeatures
-
-from sklearn.preprocessing import StandardScaler,OneHotEncoder
-
-### Liblaries for models
-
-from sklearn.linear_model import LinearRegression, Ridge
-
-from sklearn.tree import DecisionTreeRegressor
-
-### Libraries for cross validation and model evaluation
-
-from sklearn.model_selection import train_test_split, cross_val_score
-
-from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
-
-from sklearn.pipeline import Pipeline
-
-from sklearn.model_selection import GridSearchCV, cross_val_score
-
-### Libraries for SQL
-
-import psycopg2
-
-import sqlalchemy
-
-from sqlalchemy.ext.automap import automap_base
-
-from sqlalchemy.orm import Session
-
-from sqlalchemy import create_engine, func
-
-## Questions to Answer:
+## VI. Questions to Answer
 
 1.	How does the age of the car, condition and fuel type affect the price of the car?
 
 2.	Will this affect the overall demand for a used car in place of a new car for consumers?
 
-# Work Flow
+## VII. Workflow
 ## Phase 1 Data Exploratory
 * Data Collection
 * Preprocessing/ Cleaning data
