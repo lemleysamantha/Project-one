@@ -274,7 +274,7 @@ Decision Tree is one of the most commonly used, practical approaches for supervi
 
 ![image](https://user-images.githubusercontent.com/105535250/201030320-ce757d60-9499-4c49-82fc-737b211c345f.png)
 
-### Advantages of Decission Tree Regressor
+### Advantages of Decission Tree Regressor:
 
 There are many advantages of this model. some of them are:
 
