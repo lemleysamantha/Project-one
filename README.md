@@ -6,8 +6,20 @@ https://public.tableau.com/authoring/Trial_16675235483750/Sheet1#1
 
 #Dashboard https://public.tableau.com/app/profile/matt.leiser/viz/CarPricesDashboard_16680540059890/Dashboard1?publish=yes
 
-## Summary:
-We have choosen to predict on Used Car Price
+## Deliverables of the project
+- Code necessary for data exploration and analysis: *** FILE NAME ***
+- Python code for data preprocessing and machine learning: *** FILE NAME ***
+- Dashboard: *** LINK TO DASHBOARD ***
+- Presentation slide: *** LINK TO GOOGLE SLIDE ***
+
+
+### INDEX
+#### I.		Background
+#### II.		Object
+#### III.		Data Sources
+#### IV.	Questions to Answer
+#### V.		Technologies, Languages, Tools, and Algorithms Used throughout Project
+#### VI.	Workflow of Project
 
 ## Background:
 
