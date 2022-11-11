@@ -142,6 +142,7 @@ from sqlalchemy import create_engine, func
 ## Phase 1 Data Exploratory
 * Data Collection
 * Preprocessing/ Cleaning data
+* Feature Engineering
 
 ## Phase 2 Data Analysis
 * Creating table in SQL
