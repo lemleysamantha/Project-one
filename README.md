@@ -141,14 +141,20 @@ from sqlalchemy import create_engine, func
 2.	Will this affect the overall demand for a used car in place of a new car for consumers?
 
 # Work Flow
-
+## Phase 1 Data Exploratory
 * Data Collection
 * Preprocessing/ Cleaning data
+
+## Phase 2 Data Analysis
 * Creating table in SQL
 * Machine Learning Model Selection
 * Split the data into Training and Testing 
 * Fitting Data to a Model
+
+## Phase 3 Evaluation
 * Evaluate the Model 
+
+## Visualization
 * Utilize Tableau and Google Slide for Visualization and Presentation
 
 ## Data Collection
