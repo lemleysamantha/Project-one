@@ -190,7 +190,7 @@ Odometer values larger than 200,000 (miles) were removed.
 ![image](https://user-images.githubusercontent.com/105535250/201019426-821f0822-610b-4222-bf7e-28a9a29da39c.png)
 
 
-* ### Recategorize the State column to Area
+* ### Recategorize the State with Feature Engineering and renamed column as Area
 To reduce the number of unique values in the state column we recategorized the state and arranged them into four region named as **west, midwest, northeast, and south** given new column name as Area
 
 ![image](https://user-images.githubusercontent.com/105535250/201024725-5361b85f-e3e8-49b3-a1eb-2872a097cac8.png)
