@@ -127,10 +127,15 @@ dmypy.json
 
 # Pyre type checker
 
+
+
+/shahla_S3/vehicles_maindata.csv
+
 .pyre/
 
 /shahlasegment1/vehicles.csv
-/shahla_S3/vehicles_maindata.csv
+
+Individual_Work/
 
 
 

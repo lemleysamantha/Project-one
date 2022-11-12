@@ -379,4 +379,6 @@ After evaluating both models, we find Decision Tree Regressor model better fit f
 ![image](https://user-images.githubusercontent.com/105535250/201243188-194d155c-7e5e-466c-ae31-9b3d2ebd0c73.png)
 
 ## XII. Tableau and Google Slide
+
 We tried to put everything together and present it as a presentation utilizing Tableau, which is an application for visualization, as a dashboard for data analytics and machine learning result to help the viewer understand it as easy as possible. In addition, the Tableau offers an interactive element so that the viewer can filter the dataset. The dashboard will include visualization of both dataset used in the project and machine learning result. 
+
